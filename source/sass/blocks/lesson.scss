@@ -1,0 +1,71 @@
+.lesson {
+  width: 50%;
+  min-height: 337px;
+  background-color: $lesson-bg;
+}
+.lesson__wrapper {
+  outline: 1px solid red;
+  max-width: 680px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.lesson__content {
+  width: 410px;
+  min-height: 197px;
+  outline: 1px solid white;
+  margin-right: auto; // temp ??
+  margin-left: 100px; // temp ??
+}
+
+.lesson__title {
+  @include font($font: $bebas, $size: 49px, $height: 64px);
+
+  margin: 0;
+  letter-spacing: 0.03em;
+  text-transform: lowercase;
+  margin-bottom: 35px;
+  color: $white;
+}
+
+.lesson__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lesson__form input[type="text"] {
+  @include font($font: $roboto, $size: 14px, $height: 16px);
+
+  width: 190px;
+  background-color: $darkblue;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid $blue-brd;
+  margin-bottom: 30px;
+  padding: 5px 0;
+  color: $white;
+
+  &::placeholder {
+    @include font($font: $roboto, $size: 14px, $height: 16px);
+
+    text-transform: capitalize;
+    color: $white;
+  }
+}
+
+.lesson__form input[type="submit"] {
+  @include font($font: $robotoBold, $size: 14px, $height: 16px);
+
+  width: 100%;
+  min-height: 52px;
+  border: 3px solid $white;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: $white;
+}

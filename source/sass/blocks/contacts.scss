@@ -1,0 +1,70 @@
+.contacts {
+  width: 50%;
+  min-height: 337px;
+}
+.contacts__wrapper {
+  outline: 1px solid red;
+  max-width: 680px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.contacts__content {
+  width: 410px;
+  min-height: 197px;
+  outline: 1px solid blue;
+  margin-left: auto; // temp ??
+  margin-right: 150px; // temp ??
+}
+
+.contacts__title {
+  @include font($font: $bebas, $size: 49px, $height: 49px);
+
+  margin: 0;
+  letter-spacing: 0.03em;
+  margin-bottom: 35px;
+  color: $darkblue;
+}
+
+.contacts__inner {
+  display: flex;
+  flex-wrap: wrap;
+
+  & b {
+    @include font($font: $robotoBold, $size: 16px, $height: 24px);
+
+    color: $darkblue;
+  }
+}
+
+.contacts__left-box div,
+.contacts__right-box div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__left-box {
+  border-right: 1px solid $blue-brd;
+}
+
+.contacts__address-description {
+  @include font($font: $roboto, $size: 14px, $height: 21px);
+
+  font-style: normal;
+}
+
+.contacts__schedule-description {
+  @include font($font: $roboto, $size: 14px, $height: 21px);
+
+  margin: 0;
+}
+
+.contacts__right-box a {
+  @include font($font: $roboto, $size: 14px, $height: 21px);
+  text-decoration: none;
+
+  color: $darkblue;
+}

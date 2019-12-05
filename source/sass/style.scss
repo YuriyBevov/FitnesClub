@@ -5,4 +5,12 @@
 @import "variables";
 @import "mixins";
 
+// header
 @import "blocks/header";
+// sections
+@import "blocks/additional";
+// footer
+@import "blocks/footer";
+@import "blocks/lesson";
+@import "blocks/contacts";
+@import "blocks/nav";

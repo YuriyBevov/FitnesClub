@@ -1,8 +1,9 @@
 //fonts
 
-$title: "BebasNeue-Regular";
-$text: "RobotoCondensed-Regular";
-$bold: "RobotoCondensed-Bold";
+$bebas: "BebasNeueRegular";
+//$bebasBold: "BebasNeue_bold";
+$roboto: "Roboto_Condensed";
+$robotoBold: "Roboto_Condensed_Bold";
 
 // widths
 
@@ -12,7 +13,11 @@ $tablet-width: 767px;
 
 // colors
 
-
+$white: #ffffff;
+$darkblue: #102654;
+$footer-bg: #030a1a;
+$lesson-bg: #102654;
+$blue-brd: #74819c;
 
 // retina
 

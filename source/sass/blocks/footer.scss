@@ -1,0 +1,49 @@
+.footer{
+  background-color: $footer-bg;
+  color: $white;
+}
+
+.footer__wrapper {
+  @include container();
+
+  display: flex;
+  padding: 0 100px;
+  min-height: 108px;
+}
+
+.footer__bar {
+
+}
+
+.footer__logo {
+  @include font ($font: $bebas, $size: 26px, $height: 26px);
+
+  letter-spacing: 0.02em;
+  margin-right: 22px;
+  color: $white;
+}
+
+.footer__navbar {
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+.footer__social {
+
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &-item {
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

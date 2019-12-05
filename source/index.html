@@ -5,10 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="Description" content="Author: Yuriy Bevov, Category: test work at the internship">
-  <title>FitnesClub</title>
+  <title>SuperGym</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header__bar">
+        <b class="header__bar-logo">Supergym</b>
+        <a href="tel:8800555555" class="header__bar-phone">8-800-555-55-55</a>
+      </div>
 
-</body>
+      <div class="header__inner">
+        <h1 class="visually-hidden">SuperGym - фитнес центр города Омск</h1>
+        <div class="header__content-box">
+          <div class="header__content">
+            <p class="header__city">Омск</p>
+            <b class="header__title">Фитнес центр</b>
+
+            <ul class="header__content-list">
+              <li class="header__content-item"><a href="#" class="header__content-link">Тренажёрный зал</a></li>
+              <li class="header__content-item"><a href="#" class="header__content-link">Групповые занятия</a></li>
+              <li class="header__content-item"><a href="#" class="header__content-link">Кардио-зона</a></li>
+            </ul>
+
+            <a href="#" class="header__btn">Купить абонемент</a>
+          </div>
+          <div class="header__image-box">
+            <picture>
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/superman-tablet-1x.webp 1x, img/superman-tablet-2x.webp 2x">
+              <source type="image/webp" srcset="img/superman1x.webp 1x, img/superman2x.webp 2x">
+
+
+              <source media="(max-width: 1024px)" srcset="img/superman-tablet-1x.jpg 1x, img/superman-tablet-2x.jpg 2x">
+              <img class="header__img" src="img/supreman1x.jpg" srcset="img/superman2x.jpg 2x" alt="Спортсмен">
+            </picture>
+          </div>
+        </div>
+
+        <div class="header__social">
+          <ul class="header__social-list">
+            <li class="header__social-item">
+              <a href="#" class="header__social-link header__social-link--fb">Fb</a>
+            </li>
+            <li class="header__social-item">
+              <a href="#" class="header__social-link header__social-link--vk">vk</a>
+            </li>
+            <li class="header__social-item">
+              <a href="#" class="header__social-link header__social-link--ig">ig</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <main>
+
+  <section class="additional">
+    <div class="additional__wrapper">
+
+        <div class="additional__lesson lesson">
+          <div class="lesson__wrapper">
+            <div class="lesson__content">
+              <h2 class="lesson__title">БЕСПЛАТНОЕ занятие</h2>
+              <form action="#" method="post" class="lesson__form">
+                <label for="name" class="visually-hidden">Имя</label>
+                <input type="text" id="name" placeholder="имя">
+                <label for="phone" class="visually-hidden">Телефон</label>
+                <input type="text" id="phone" placeholder="телефон">
+                <input type="submit" value="отправить">
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="additional__contacts contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__content">
+              <h2 class="contacts__title">Контакты</h2>
+              <div class="contacts__inner">
+
+                <div class="contacts__left-box">
+                  <div class="contacts__address-box">
+                    <b class="contacts__address">Адрес:</b>
+                    <address class="contacts__address-description">г. Омск, ул. 60 лет Октября, 7</address>
+                  </div>
+
+                  <div class="contacts__schedule-box">
+                    <b class="contacts__schedule">График работы:</b>
+                    <p class="contacts__schedule-description">Пн-Вс: с 8:00 до 22:00</p>
+                  </div>
+                </div>
+
+                <div class="contacts__right-box">
+                  <div class="contacts__phone-box">
+                    <b class="contacts__phone">Телефон:</b>
+                    <a href="tel:88005555555" class="contacts__phone-description">8-800-555-55-55</a>
+                  </div>
+
+                  <div class="contacts__mail-box">
+                    <b class="contacts__mail">Email:</b>
+                    <a href="mailto:omsk@supergym.ru" class="contacts__mail-description">omsk@supergym.ru</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <b class="footer__logo">Supergym</b>
+      <nav class="footer__navbar nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Услуги</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Абонементы</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Акции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Тренеры</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer__social">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--vk">
+              <svg class="footer__social-svg footer__social-svg--vk" width="24" height="13">
+                <use xlink:href="#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--insta">
+              <svg class="footer__social-svg footer__social-svg--insta" width="24" height="24">
+                <use xlink:href="#icon-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a href="#" class="footer__social-link footer__social-link--fb">
+              <svg class="footer__social-svg footer__social-svg--fb" width="12" height="24">
+                <use xlink:href="#icon-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  </body>
 </html>
