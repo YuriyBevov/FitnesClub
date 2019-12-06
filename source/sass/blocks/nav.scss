@@ -19,3 +19,64 @@
   text-decoration: none;
   color: $white;
 }
+
+.nav__item--logo {
+  display: none;
+}
+
+@media(max-width: $desktop-width) {
+  .nav__item {
+    margin-right: 30px
+  }
+
+}
+
+@media(max-width: $tablet-width) {
+  .nav__link {
+    @include font($font: $roboto, $size: 16px, $height: 19px);
+  }
+
+  .nav__list {
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  .nav__item {
+    width: 50%;
+    margin-right: 0;
+  }
+
+  .nav__item--logo {
+    display: block;
+
+    @include font ($font: $bebas, $size: 20px, $height: 20px);
+    letter-spacing: 0.02em;
+  }
+
+  .nav__item {
+    order: 4;
+    margin-bottom: 20px;
+
+    &--schedule {
+      padding-left: 15px;
+    }
+
+    &--logo {
+      order: 1;
+    }
+
+    &--sale {
+      order: 1;
+      padding-left: 15px;
+    }
+
+    &--service {
+      order: 2;
+    }
+
+    &--coach {
+      order: 3;
+      padding-left: 15px;
+    }
+  }
+}

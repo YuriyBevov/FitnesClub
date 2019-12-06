@@ -51,6 +51,7 @@
   display: flex;
   max-width: 960px;
   justify-content: space-between;
+  align-items: center; //
   flex-grow: 1;
 }
 
@@ -62,6 +63,7 @@
   text-align: right;
   align-items: flex-end;
   padding-top: 115px;
+  margin-right: 10px; //
 
   &-list {
     position: absolute;
@@ -94,6 +96,7 @@
 
   margin: 0;
   margin-bottom: 62px;
+  padding-left: 75px; //
   letter-spacing: 0.03em;
   color: $white;
 }
@@ -113,8 +116,12 @@
 }
 
 .header__image-box {
-  width: 500px;
-  height: 556px;
+  max-height: 556px;
+}
+
+.header__img { //
+  width: 100%;
+
 }
 
 .header__social {
@@ -122,6 +129,7 @@
   flex-direction: column;
   justify-content: flex-end;
   margin-left: auto;
+  padding-left: 5px; //
 
   &-list {
     list-style: none;

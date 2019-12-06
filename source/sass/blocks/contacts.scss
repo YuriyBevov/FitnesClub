@@ -2,8 +2,9 @@
   width: 50%;
   min-height: 337px;
 }
+
 .contacts__wrapper {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   max-width: 680px;
   height: 100%;
   display: flex;
@@ -15,9 +16,9 @@
 .contacts__content {
   width: 410px;
   min-height: 197px;
-  outline: 1px solid blue;
-  margin-left: auto; // temp ??
-  margin-right: 150px; // temp ??
+  // outline: 1px solid blue;
+  margin-left: auto;
+  margin-right: 150px;
 }
 
 .contacts__title {
@@ -25,29 +26,48 @@
 
   margin: 0;
   letter-spacing: 0.03em;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
   color: $darkblue;
 }
 
 .contacts__inner {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 
   & b {
     @include font($font: $robotoBold, $size: 16px, $height: 24px);
 
     color: $darkblue;
+    margin-bottom: 4px;
   }
+}
+
+.contacts__center-line {
+  width: 1px;
+  min-height: 102px;
+  background-color: $blue-brd;
 }
 
 .contacts__left-box div,
 .contacts__right-box div {
   display: flex;
   flex-direction: column;
+
+  // outline: 1px solid black;
 }
 
 .contacts__left-box {
-  border-right: 1px solid $blue-brd;
+  padding-left: 5px;
+}
+
+.contacts__right-box {
+  padding-right: 5px;
+}
+
+.contacts__address-box {
+  margin-bottom: 18px;
 }
 
 .contacts__address-description {
@@ -67,4 +87,89 @@
   text-decoration: none;
 
   color: $darkblue;
+}
+
+.contacts__phone-box {
+  margin-bottom: 18px;
+}
+
+@media(max-width: $desktop-width) {
+  .contacts{
+    width: 100%;
+  }
+
+  .contacts__wrapper {
+    margin: 0 auto;
+    padding-top: 65px;
+    padding-bottom: 62px;
+  }
+
+  .contacts__content {
+    width: 502px;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+
+  .contacts__title {
+    @include font($font: $bebas, $size: 42px, $height: 42px);
+    margin-bottom: 35px;
+  }
+
+  .contacts__inner {
+    & b {
+      @include font($font: $robotoBold, $size: 20px, $height: 30px);
+      margin-bottom: 6px;
+    }
+  }
+
+  .contacts__address-description,
+  .contacts__schedule-description {
+    @include font($font: $roboto, $size: 18px, $height: 27px);
+  }
+
+  .contacts__left-box {
+    padding-left: 0;
+  }
+
+  .contacts__address-box {
+    margin-bottom: 20px;
+  }
+
+  .contacts__right-box {
+    padding-right: 17px;
+
+    & a {
+      @include font($font: $roboto, $size: 18px, $height: 27px);
+    }
+  }
+
+  .contacts__center-line {
+    min-height: 129px;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .contacts__wrapper {
+    padding-top: 67px;
+  }
+
+  .contacts__content {
+    width: 290px;
+    padding-right: 0;
+  }
+
+  .contacts__title {
+    @include font($font: $bebas, $size: 32px, $height: 32px);
+    margin-bottom: 37px;
+  }
+
+  .contacts__left-box {
+    margin-bottom: 19px;
+  }
+
+  .contacts__center-line {
+    display: none;
+  }
+
+
 }

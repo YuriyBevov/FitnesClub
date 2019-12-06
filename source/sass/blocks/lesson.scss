@@ -4,22 +4,22 @@
   background-color: $lesson-bg;
 }
 .lesson__wrapper {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   max-width: 680px;
   height: 100%;
 
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-left: auto;
+  padding-top: 57px;
+  padding-right: 5px;
 }
 
 .lesson__content {
   width: 410px;
   min-height: 197px;
-  outline: 1px solid white;
-  margin-right: auto; // temp ??
-  margin-left: 100px; // temp ??
+  // outline: 1px solid white;
+  margin-right: auto;
+  margin-left: 100px;
 }
 
 .lesson__title {
@@ -46,8 +46,9 @@
   border: none;
   border-radius: 0;
   border-bottom: 1px solid $blue-brd;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 5px 0;
+  cursor: pointer;
   color: $white;
 
   &::placeholder {
@@ -62,10 +63,67 @@
   @include font($font: $robotoBold, $size: 14px, $height: 16px);
 
   width: 100%;
-  min-height: 52px;
+  min-height: 55px;
   border: 3px solid $white;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+  cursor: pointer;
   background-color: transparent;
   color: $white;
+}
+
+@media(max-width: $desktop-width) {
+  .lesson{
+    width: 100%;
+    min-height: 324px;
+  }
+
+  .lesson__title {
+    @include font($font: $bebas, $size: 42px, $height: 42px);
+  }
+
+  .lesson__wrapper {
+    margin: 0 auto;
+    padding-top: 67px;
+    padding-right: 0;
+  }
+
+  .lesson__content {
+    width: 502px;
+    margin: 0 auto;
+    padding-right: 30px;
+  }
+
+  .lesson__form input[type="text"] {
+    width: 206px;
+  }
+}
+
+@media(max-width: $tablet-width) {
+  .lesson__content {
+    width: 290px;
+    padding-right: 0;
+  }
+
+  .lesson__title {
+    @include font($font: $bebas, $size: 32px, $height: 32px);
+    margin-bottom: 40px;
+  }
+
+  .lesson__form input[type="text"] {
+    width: 100%;
+  }
+
+  #name {
+    margin-bottom: 32px;
+  }
+
+  #phone {
+    margin-bottom: 39px;
+  }
+
+
+  .lesson__form input[type="submit"] {
+    margin-bottom: 68px;
+  }
 }

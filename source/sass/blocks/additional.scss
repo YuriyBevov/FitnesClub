@@ -6,3 +6,14 @@
 .additional__wrapper {
   display: flex;
 }
+
+@media(max-width: $desktop-width) {
+  .additional__wrapper {
+    @include container();
+    flex-direction: column;
+  }
+}
+
+@media(max-width: $tablet-width) {
+
+}
