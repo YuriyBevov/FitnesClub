@@ -63,6 +63,7 @@
 
 @media(max-width: $tablet-width) {
   .footer__wrapper {
+    position: relative;
     width: 320px;
     padding: 50px 15px;
     flex-wrap: wrap;
@@ -70,7 +71,9 @@
   }
 
   .footer__logo {
-    display: none;
+    position: absolute;
+    top: 50px;
+    left: 15px;
   }
 
   .footer__navbar {

@@ -5,8 +5,6 @@
   flex-wrap: wrap;
   min-height: 756px;
   padding: 120px 100px 0;
-
-  outline: 1px solid red;
 }
 
 .gym__content {
@@ -14,8 +12,6 @@
   min-height: 314px;
   padding: 45px 10px;
   padding-left: 60px;
-
-  outline: 1px solid blue;
 }
 
 .gym__title {
@@ -51,9 +47,7 @@
   height: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-bottom: 110px; // для видео контейнера
-
-  outline: 1px solid black;
+  padding-bottom: 110px;
 }
 
 .gym__img {
