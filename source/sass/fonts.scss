@@ -17,6 +17,15 @@
 }
 
 @font-face {
+  font-family: "Roboto_Condensed_Light";
+  src: url("../fonts/Roboto_Condensed-Light.woff2") format("woff2"),
+    url("../fonts/Roboto_Condensed-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "Roboto_Condensed_Bold";
   src: url("../fonts/Roboto_Condensed_Bold.woff2") format("woff2"),
     url("../fonts/Roboto_Condensed_Bold.woff") format("woff");
