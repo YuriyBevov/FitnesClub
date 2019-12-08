@@ -1,0 +1,246 @@
+.advantages {
+  background-color: $lightgrey;
+}
+.advantages__wrapper {
+  //@include container();
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 115px 0;
+}
+
+.advantages__title {
+  @include font($font: $bebas, $size: 49px, $height: 49px);
+
+  letter-spacing: 0.03em;
+  margin: 0;
+  margin-bottom: 73px;
+  color: $darkblue;
+}
+
+.advantages__marker-gloss {
+  @include font($font: $roboto, $size: 14px, $height: 21px);
+
+  margin: 0;
+  color: $violet;
+
+  &--gym {
+    @include font($font: $robotoBold, $size: 26px, $height: 39px);
+
+    margin-bottom: 33px;
+    color: $white;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1040px;
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages__box {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 340px;
+  height: 100%;
+
+  &--parking,
+  &--area {
+    border-bottom: 2px solid rgba(209, 10, 66, 0.2);
+  }
+}
+
+.advantages__box--area {
+  padding-left: 29px;
+
+  & .advantages__marker {
+    margin-right: 33px;
+  }
+
+  & .advantages__marker-image img {
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+
+  & .advantages__marker-gloss {
+    margin-left: -2px;
+  }
+}
+
+.advantages__content--area {
+  & .advantages__name {
+    margin-bottom: 11px;
+  }
+}
+
+.advantages__box--comfort {
+  & .advantages__marker {
+    margin: 79px 33px 0 21px;
+  }
+
+  & .advantages__marker-image {
+    margin-bottom: 5px;
+
+    & img {
+      margin-bottom: 2px;
+    }
+  }
+
+  .advantages__content--comfort {
+    & .advantages__name {
+      margin-top: 81px;
+      margin-bottom: 11px;
+    }
+  }
+
+  & .advantages__marker-gloss {
+    margin-left: -2px;
+  }
+}
+
+.advantages__box--parking {
+
+  & .advantages__marker {
+    margin-right: 33px;
+  }
+
+  & .advantages__marker-image img {
+    margin-left: 2px;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+}
+
+.advantages__box--experience {
+  & .advantages__marker {
+    margin: 80px 34px 0 3px;
+  }
+
+  & .advantages__marker-image img {
+    margin-bottom: 2px;
+  }
+
+  & .advantages__marker-gloss {
+    margin-left: -3px;
+  }
+}
+
+.advantages__content--experience {
+  & .advantages__name {
+    margin-top: 80px;
+  }
+}
+
+.advantages__item {
+  width: 50%;
+  max-width: 570px;
+  min-height: 155px;
+
+  &:nth-child(1) {
+    margin-right: auto;
+  }
+
+  &:nth-child(odd):not(:nth-child(2)) {
+    margin-right: auto;
+  }
+
+  &:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &:nth-child(odd):not(:nth-child(1)):not(:nth-child(3)) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &--gym {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 240px;
+    min-height: 307px;
+    border-bottom: 0;
+    padding-top: 55px;
+    background-color: $lightblue;
+  }
+}
+
+.advantages__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  flex-grow: 1;
+}
+
+.advantages__marker {
+  margin-right: 30px;
+
+  &--gym {
+    @include font($font: $robotoBold, $size: 74px, $height: 74px);
+
+    margin-right: 5px;
+    margin-bottom: 1px;
+    color: $white;
+  }
+}
+
+.advantages__name {
+  @include font($font: $robotoBold, $size: 22px, $height: 22px);
+
+  margin-bottom: 11px;
+  color: $darkblue;
+}
+
+.advantages__description {
+  @include font($font: $robotoLight, $size: 16px, $height: 22px);
+
+  max-width: 232px;
+  margin: 0;
+  color: $darkblue;
+
+  &--gym {
+    @include font($font: $roboto, $size: 16px, $height: 22px);
+
+    max-width: 180px;
+    font-weight: 400;
+    text-align: center;
+    color: $white;
+  }
+}
+
+@media(max-width: $desktop-width) {
+  .advantages__wrapper {
+  }
+
+  .advantages__title {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .advantages__name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media(max-width: $desktop-width) {
+  .advantages__wrapper {
+  }
+
+  .advantages__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
