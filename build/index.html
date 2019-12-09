@@ -50,11 +50,11 @@
           </div>
           <div class="header__image-box">
             <picture>
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/superman-tablet-1x.webp 1x, img/superman-tablet-2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/superman-tablet-1x.webp 1x, img/superman-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/superman1x.webp 1x, img/superman2x.webp 2x">
 
 
-              <source media="(max-width: 1023px)" srcset="img/superman-tablet-1x.jpg 1x, img/superman-tablet-2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/superman-tablet-1x.jpg 1x, img/superman-tablet-2x.jpg 2x">
               <img class="header__img" src="img/superman1x.jpg" srcset="img/superman2x.jpg 2x" alt="Спортсмен">
             </picture>
           </div>
@@ -96,11 +96,11 @@
       <div class="gym__image-box">
         <picture>
           <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-mobile-1x.webp 1x, img/gym-mobile-2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-tablet-1x.webp 1x, img/gym-tablet-2x.webp 2x">
           <source type="image/webp" srcset="img/gym1x.webp 1x, img/gym2x.webp 2x">
 
           <source media="(max-width: 767px)" srcset="img/gym-mobile-1x.jpg 1x, img/gym-mobile-2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
+          <source media="(max-width: 1199px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
           <img class="gym__img" src="img/gym1x.jpg" srcset="img/gym2x.jpg 2x" alt="Тренажерный зал">
         </picture>
 
@@ -108,11 +108,11 @@
           <div class="gym__video-box-content">
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-mask-mobile-1x.webp 1x, img/gym-video-mask-mobile-2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/gym-video-mask-tablet-1x.webp 1x, img/gym-video-mask-tablet-2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-video-mask-tablet-1x.webp 1x, img/gym-video-mask-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/gym-video-mask1x.webp 1x, img/gym-video-mask2x.webp 2x">
 
-              <source media="(max-width: 767px)" srcset="img/gym-video-mask-mobile1x.jpg 1x, img/gym-video-mask-mobile2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/gym-video-mask-tablet1x.jpg 1x, img/gym-video-mask-tablet2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/gym-video-mask-mobile-1x.jpg 1x, img/gym-video-mask-mobile-2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/gym-video-mask-tablet-1x.jpg 1x, img/gym-video-mask-tablet-2x.jpg 2x">
               <img class="gym__video" src="img/gym-video-mask1x.jpg" srcset="img/gym-video-mask2x.jpg 2x" alt="Видео">
             </picture>
             <div class="gym__video-mask">
@@ -121,6 +121,67 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="subscription">
+    <div class="subscription__wrapper">
+      <h2 class="subscription__title">Абонементы</h2>
+
+      <!-- ползунок -->
+
+      <div class="subscription__toggle-box">
+        <ul class="subscription__toggle-list">
+          <li class="subscription__toggle-item">
+            <a href="#" class="subscription__toggle-link subscription__toggle-link--active">1 месяц</a>
+          </li>
+          <li class="subscription__toggle-item">
+            <a href="#" class="subscription__toggle-link">6 месяцев</a>
+          </li>
+          <li class="subscription__toggle-item">
+            <a href="#" class="subscription__toggle-link">12 месяцев</a>
+          </li>
+        </ul>
+        <div class="subscription__toggle-line">
+          <div class="subscription__toggle-pin"></div>
+        </div>
+      </div>
+
+      <ul class="subscription__list">
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">С тренером</b>
+            <p class="subscription__description">12 занятий</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">5000</p>
+              <span class="subscription__price-before">5000</span>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Дневной</b>
+            <p class="subscription__description">с 8:00 до 17:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">1700</p>
+              <span class="subscription__price-before">1700</span>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Полный день</b>
+            <p class="subscription__description">с 8:00 до 22:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">2700</p>
+              <span class="subscription__price-before">2700</span>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -226,8 +287,12 @@
           <div class="advantages__box advantages__box--area">
             <div class="advantages__marker">
               <picture class="advantages__marker-image">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/area-mobile-1x.webp 1x, img/area-mobile-2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/area-tablet-1x.webp 1x, img/area-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/area1x.webp 1x, img/area2x.webp 2x">
 
+                <source media="(max-width: 767px)" srcset="img/area-mobile-1x.jpg 1x, img/area-mobile-2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/area-tablet-1x.jpg 1x, img/area-tablet-2x.jpg 2x">
                 <img src="img/area1x.png" srcset="img/area2x.png 2x" alt="Площадь">
               </picture>
 
@@ -235,7 +300,7 @@
             </div>
             <div class="advantages__content advantages__content--area">
               <b class="advantages__name">Площадь</b>
-              <p class="advantages__description">Занимайтесь без очередей и толпучки</p>
+              <p class="advantages__description">Занимайтесь без очередей и&nbsp;толпучки</p>
             </div>
           </div>
         </li>
@@ -244,8 +309,12 @@
           <div class="advantages__box advantages__box--parking">
             <div class="advantages__marker">
               <picture class="advantages__marker-image">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/parking-mobile-1x.webp 1x, img/parking-mobile-2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/parking-tablet-1x.webp 1x, img/parking-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/parking1x.webp 1x, img/parking2x.webp 2x">
 
+                <source media="(max-width: 767px)" srcset="img/parking-mobile-1x.jpg 1x, img/parking-mobile-2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/parking-tablet-1x.jpg 1x, img/parking-tablet-2x.jpg 2x">
                 <img src="img/parking1x.png" srcset="img/parking2x.png 2x" alt="Собственная парковка">
               </picture>
 
@@ -270,8 +339,12 @@
           <div class="advantages__box advantages__box--comfort">
             <div class="advantages__marker">
               <picture class="advantages__marker-image">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/comfort-mobile-1x.webp 1x, img/comfort-mobile-2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/comfort-tablet-1x.webp 1x, img/comfort-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/comfort1x.webp 1x, img/comfort2x.webp 2x">
 
+                <source media="(max-width: 767px)" srcset="img/comfort-mobile-1x.jpg 1x, img/comfort-mobile-2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/comfort-tablet-1x.jpg 1x, img/comfort-tablet-2x.jpg 2x">
                 <img src="img/comfort1x.png" srcset="img/comfort2x.png 2x" alt="Комфорт">
               </picture>
 
@@ -279,7 +352,7 @@
             </div>
             <div class="advantages__content advantages__content--comfort">
               <b class="advantages__name">Комфорт</b>
-              <p class="advantages__description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              <p class="advantages__description">Просторные раздевалки, душевые,&nbsp;фен, Wi-Fi, кулеры</p>
             </div>
           </div>
         </li>
@@ -288,8 +361,12 @@
           <div class="advantages__box advantages__box--experience">
             <div class="advantages__marker">
               <picture class="advantages__marker-image">
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/experience-mobile-1x.webp 1x, img/experience-mobile-2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1199px)" srcset="img/experience-tablet-1x.webp 1x, img/experience-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/experience1x.webp 1x, img/experience2x.webp 2x">
 
+                <source media="(max-width: 767px)" srcset="img/experience-mobile-1x.jpg 1x, img/experience-mobile-2x.jpg 2x">
+                <source media="(max-width: 1199px)" srcset="img/experience-tablet-1x.jpg 1x, img/experience-tablet-2x.jpg 2x">
                 <img src="img/experience1x.png" srcset="img/experience2x.png 2x" alt="Тренерский опыт">
               </picture>
 
@@ -321,11 +398,11 @@
             </div>
             <picture>
               <source type="image/webp" media="(max-width: 767px)" srcset="img/girl-mobile-1x.webp 1x, img/girl-mobile-2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/girl-tablet-1x.webp 1x, img/girl-tablet-2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/girl-tablet-1x.webp 1x, img/girl-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/girl1x.webp 1x, img/girl2x.webp 2x">
 
               <source media="(max-width: 767px)" srcset="img/girl-mobile-1x.jpg 1x, img/girl-mobile-2x.jpg 2x">
-              <source media="(max-width: 1023px)" srcset="img/girl-tablet-1x.jpg 1x, img/girl-tablet-2x.jpg 2x">
+              <source media="(max-width: 1199px)" srcset="img/girl-tablet-1x.jpg 1x, img/girl-tablet-2x.jpg 2x">
               <img class="main-offer__img" src="img/girl1x.jpg" srcset="img/girl2x.jpg 2x" alt="Девушка">
             </picture>
           </div>

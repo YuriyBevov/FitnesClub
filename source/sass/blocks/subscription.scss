@@ -1,0 +1,177 @@
+.subscription {
+  position: relative;
+  background-color: $lightgrey;
+
+  &:after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 321px;
+    height: 384px;
+
+    content: "";
+    background-image: url("../img/kettle1x.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../img/kettle2x.png");
+    }
+  }
+}
+
+.subscription__wrapper {
+  @include container();
+
+  padding-top: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subscription__title {
+  @include font($font: $bebas, $size: 49px, $height: 49px);
+
+  margin: 0;
+  margin-bottom: 37px;
+  letter-spacing: 0.03em;
+  color: $darkblue;
+}
+
+.subscription__toggle-box {
+  margin-bottom: 29px;
+}
+
+.subscription__toggle-list {
+  display: flex;
+  flex-wrap: wrap;
+  // width: 340px;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2); // временно пока нет шкалы
+}
+
+.subscription__toggle-link {
+  @include font($font: $roboto, $size: 20px, $height: 30px);
+
+  text-decoration: none;
+  margin-right: 45px;
+  color: rgba(16, 38, 84, 0.5);
+
+  &--active {
+    color: $blue;
+  }
+}
+
+.subscription__toggle-item:last-child a {
+  margin-right: 0;
+}
+
+.subscription__list {
+  width: 100%;
+  max-width: 1160px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.subscription__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 360px;
+  min-height: 448px;
+  margin-right: auto;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  /*transition: all 0.3s 0.1s;
+
+
+ // hover на ссылку или лишку
+    background-image: url("../img/subscription-brd1x.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../img/subscription-brd2x.png");
+    }*/
+}
+
+.subscription__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 323px;
+  width: 203px;
+}
+
+.subscription__name {
+  @include font($font: $robotoBold, $size: 26px, $height: 29px);
+
+  margin-bottom: 10px;
+  color: $darkblue;
+}
+
+.subscription__description {
+  @include font($font: $roboto, $size: 16px, $height: 24px);
+
+  margin: 0;
+  margin-bottom: 11px;
+  color: $lightblack;
+}
+
+
+.subscription__price-box {
+  position: relative;
+  max-width: 100%;
+  min-height: 80px;
+}
+
+.subscription__price {
+  @include font($font: $robotoBold, $size: 100px, $height: 150px);
+
+  position: relative;
+  margin: 0;
+  margin-bottom: 27px;
+  opacity: 0.48;
+  color: $specialgrey;
+
+  z-index: 0;
+
+  &-before {
+    @include font($font: $robotoBold, $size: 60px, $height: 90px);
+
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-67.5%, 62.5%);
+    color: $price;
+
+    z-index: 1;
+  }
+}
+
+.subscription__btn {
+@include font($font: $robotoBold, $size: 12px, $height: 14px);
+
+  display: block;
+  width: 206px;
+  min-height: 64px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 2px solid $darkblue;
+  text-decoration: none;
+  text-align: center;
+  padding: 25px 10px;
+  color: $darkblue;
+}

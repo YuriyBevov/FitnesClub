@@ -1,7 +1,8 @@
 .coach__wrapper {
   @include container();
 
-  padding: 100px;
+  max-width: 1290px;
+  padding: 100px 65px;
 }
 
 .coach__title {
