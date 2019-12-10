@@ -32,7 +32,7 @@
               <li class="header__content-item"><a href="#" class="header__content-link">Кардио-зона</a></li>
             </ul>
 
-            <a href="#" class="header__btn">Купить абонемент</a>
+            <a href="#subscription" class="header__btn">Купить абонемент</a>
           </div>
           <div class="header__image-box">
             <picture>
@@ -110,7 +110,7 @@
     </div>
   </section>
 
-  <section class="subscription">
+  <section class="subscription" id="subscription">
     <div class="subscription__wrapper">
       <h2 class="subscription__title">Абонементы</h2>
 
@@ -140,7 +140,12 @@
             <p class="subscription__description">12 занятий</p>
             <div class="subscription__price-box">
               <p class="subscription__price">5000</p>
-              <span class="subscription__price-before">5000</span>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">5000</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
             </div>
             <a href="#" class="subscription__btn">купить абонемент</a>
           </div>
@@ -151,7 +156,12 @@
             <p class="subscription__description">с 8:00 до 17:00</p>
             <div class="subscription__price-box">
               <p class="subscription__price">1700</p>
-              <span class="subscription__price-before">1700</span>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">1700</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
             </div>
             <a href="#" class="subscription__btn">купить абонемент</a>
           </div>
@@ -162,7 +172,12 @@
             <p class="subscription__description">с 8:00 до 22:00</p>
             <div class="subscription__price-box">
               <p class="subscription__price">2700</p>
-              <span class="subscription__price-before">2700</span>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">2700</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
             </div>
             <a href="#" class="subscription__btn">купить абонемент</a>
           </div>
@@ -539,5 +554,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
   </body>
 </html>

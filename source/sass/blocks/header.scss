@@ -13,7 +13,7 @@
 .header__wrapper {
   @include container();
 
-  padding: 32px 100px;
+  padding: 32px 20px;
 
   outline: 1px solid red;
 }
@@ -37,9 +37,6 @@
   letter-spacing: 0.03em;
   color: $white;
 }
-
-
-// ---------------
 
 .header__inner {
   display: flex;
@@ -153,5 +150,32 @@
     text-decoration: none;
     text-transform: uppercase;
     color: $white;
+  }
+}
+
+@media (max-width: $desktop-width) {
+  .header__social {
+    display: none;
+  }
+
+  .header__bar-logo,
+  .header__bar-phone {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .header__city {
+    font-size: 34px;
+    line-height: 34px;
+  }
+
+  .header__title {
+    font-size: 86px;
+    line-height: 86px;
+  }
+
+  .header__btn {
+    width: 183px;
+    min-height: 57px;
   }
 }
