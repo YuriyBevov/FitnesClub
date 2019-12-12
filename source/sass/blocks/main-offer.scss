@@ -57,6 +57,17 @@
   text-transform: uppercase;
   border-bottom: 1px solid $white;
   color: $white;
+
+  transition: opacity 0.2s 0.1s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .main-offer__img {
