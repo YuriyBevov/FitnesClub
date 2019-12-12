@@ -140,7 +140,6 @@
 }
 
 .header__image-box {
-
   & picture {
     display: flex;
   }
@@ -247,7 +246,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .header {
     min-height: 491px;
   }

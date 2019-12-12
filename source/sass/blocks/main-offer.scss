@@ -75,9 +75,8 @@
   height: 100%;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .main-offer__box {
-
     & picture {
       flex-grow: 1;
     }
@@ -88,7 +87,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .main-offer__content {
     width: 100%;
     max-width: 320px;
@@ -96,7 +95,6 @@
 
 
   .main-offer__box {
-
     & picture {
       height: 50%;
     }
@@ -110,15 +108,12 @@
 
   .main-offer__description {
     flex-grow: 0;
+    text-align: center;
+    margin-bottom: 30px;
   }
 
   .main-offer__price {
     margin-bottom: 20px;
-  }
-
-  .main-offer__description {
-    text-align: center;
-    margin-bottom: 30px;
   }
 
   .main-offer__img {

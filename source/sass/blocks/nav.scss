@@ -35,14 +35,13 @@
   display: none;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .nav__item {
-    margin-right: 30px
+    margin-right: 30px;
   }
-
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .nav__link {
     @include font($font: $roboto, $size: 16px, $height: 19px);
   }
@@ -55,11 +54,8 @@
   .nav__item {
     width: 50%;
     margin-right: 0;
-  }
-
-  .nav__item {
-    order: 4;
     margin-bottom: 20px;
+    order: 4;
 
     &--schedule {
       padding-left: 15px;

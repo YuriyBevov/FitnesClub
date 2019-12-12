@@ -1,6 +1,7 @@
 .advantages {
   background-color: $lightgrey;
 }
+
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
@@ -95,7 +96,6 @@
 }
 
 .advantages__box--parking {
-
   & .advantages__marker {
     margin-right: 33px;
   }
@@ -109,7 +109,7 @@
 
 .advantages__box--experience {
   & .advantages__marker {
-    margin: 0px 34px 0 3px;
+    margin: 0 34px 0 3px;
   }
 
   & .advantages__marker-image img {
@@ -204,7 +204,7 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .advantages__wrapper {
     padding-top: 97px;
     padding-bottom: 90px;
@@ -248,12 +248,13 @@
     margin-top: 8px;
   }
 
-  .advantages__box--area, .advantages__box--parking {
+  .advantages__box--area,
+  .advantages__box--parking {
     border-bottom: 0;
   }
 
   .advantages__box--comfort .advantages__marker {
-    margin: 5px 33px 0 3px
+    margin: 5px 33px 0 3px;
   }
 
   .advantages__box--experience .advantages__marker {
@@ -271,7 +272,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .advantages__wrapper {
     padding-bottom: 19px;
   }

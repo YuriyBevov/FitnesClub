@@ -1,4 +1,4 @@
-.footer{
+.footer {
   background-color: $footer-bg;
   color: $white;
 }
@@ -25,7 +25,6 @@
 }
 
 .footer__social {
-
   &-list {
     display: flex;
     flex-wrap: wrap;
@@ -58,7 +57,7 @@
   opacity: 0.8;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .footer__wrapper {
     padding: 45px;
   }
@@ -68,14 +67,13 @@
   }
 
   .footer__social {
-
     &-item {
       margin-right: 20px;
     }
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .footer__wrapper {
     position: relative;
     width: 320px;

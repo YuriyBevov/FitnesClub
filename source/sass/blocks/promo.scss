@@ -128,7 +128,7 @@
   height: 100%;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .promo__wrapper {
     padding: 102px 45px 0;
     min-height: 292px;
@@ -201,7 +201,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .promo__wrapper {
     width: 320px;
     flex-direction: column;

@@ -53,7 +53,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    height:462px;
+    height: 462px;
     margin-left: 0;
     margin-bottom: 0;
     padding: 0;
@@ -64,7 +64,7 @@
     margin-bottom: 0;
   }
 
-  &-title{
+  &-title {
     @include font($font: $robotoBold, $size: 26px, $height: 26px);
 
     display: block;
@@ -104,7 +104,7 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .offer__wrapper {
     padding: 100px 45px 0;
   }
@@ -143,8 +143,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
-
+@media (max-width: $tablet-width) {
   .offer__wrapper {
     padding: 66px 15px 0;
     width: 320px;

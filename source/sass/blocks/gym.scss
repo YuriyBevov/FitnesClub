@@ -121,7 +121,7 @@
   }
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .gym__wrapper {
     padding: 100px 45px;
     padding-top: 97px;
@@ -142,7 +142,7 @@
   }
 
   .gym__description {
-    margin-bottom: 35px
+    margin-bottom: 35px;
   }
 
   .gym__text {
@@ -182,6 +182,7 @@
       height: 85px;
       background-size: 85px 85px;
     }
+
     &:active {
       width: 60px;
       height: 60px;
@@ -190,9 +191,9 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .gym__wrapper {
-    padding: 67px 0px;
+    padding: 67px 0;
   }
 
   .gym__content {
@@ -202,6 +203,7 @@
     padding: 0 15px;
     align-items: flex-start;
   }
+
   .gym__title {
     @include font($font: $bebas, $size: 32px, $height: 32px);
 
@@ -224,7 +226,7 @@
     padding-bottom: 0;
     margin: 0 auto;
 
-    &>picture {
+    & > picture {
       height: 313px;
       margin-bottom: 40px;
     }

@@ -77,9 +77,23 @@
   @include font($font: robotoBold, $size: 18px, $height: 27px);
 
   width: 100%;
+  position: relative;
+  top: 79.6%;
   margin: 0;
+  margin-bottom: 250px;
   text-align: center;
   color: $white;
+  transition: margin-bottom 2s 0.1s, top 1.5s 0.1s;
+}
+
+.coach__info:hover,
+.coach__info:focus {
+  background-color: rgba(16, 38, 84, 0.89);
+
+  & > .coach__name {
+    top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .coach__info {
@@ -139,24 +153,7 @@
   color: $grey;
 }
 
-.coach__name {
-  position: relative;
-  top: 79.6%;
-  margin-bottom: 250px;
-  transition: margin-bottom 2s 0.1s, top 1.5s 0.1s ;
-}
-
-.coach__info:hover,
-.coach__info:focus {
-  background-color: rgba(16, 38, 84, 0.89);
-
-  &>.coach__name {
-    top: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .coach__wrapper {
     display: flex;
     flex-direction: column;
@@ -195,7 +192,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .coach__wrapper {
     padding: 67px 45px 40px;
   }
@@ -222,7 +219,7 @@
     width: 226px;
     margin-right: 0;
     max-width: 226px;
-    height: 274px
+    height: 274px;
   }
 
   .coach__img {
@@ -234,10 +231,6 @@
     @include font ($font: $bebas, $size: 32px, $height: 32px);
 
     margin-bottom: 45px;
-  }
-
-  .coach__advantages-item {
-
   }
 
   .tablet-hidden { // temp для лишки пока нет js

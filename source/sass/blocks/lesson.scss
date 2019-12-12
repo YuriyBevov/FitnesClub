@@ -3,6 +3,7 @@
   min-height: 337px;
   background-color: $blue;
 }
+
 .lesson__wrapper {
   max-width: 680px;
   height: 100%;
@@ -80,8 +81,8 @@
   }
 }
 
-@media(max-width: $desktop-width) {
-  .lesson{
+@media (max-width: $desktop-width) {
+  .lesson {
     width: 100%;
     min-height: 324px;
   }
@@ -107,7 +108,7 @@
   }
 }
 
-@media(max-width: $tablet-width) {
+@media (max-width: $tablet-width) {
   .lesson__content {
     width: 290px;
     padding-right: 0;
@@ -122,11 +123,11 @@
     width: 100%;
   }
 
-  #name {
+  .lesson__input--name {
     margin-bottom: 32px;
   }
 
-  #phone {
+  .lesson__input--phone {
     margin-bottom: 39px;
   }
 

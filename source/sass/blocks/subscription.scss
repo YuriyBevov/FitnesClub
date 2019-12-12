@@ -164,7 +164,7 @@
 }
 
 .subscription__btn {
-@include font($font: $robotoBold, $size: 12px, $height: 14px);
+  @include font($font: $robotoBold, $size: 12px, $height: 14px);
 
   display: block;
   width: 206px;
@@ -182,11 +182,9 @@
 
   &:hover,
   &:focus {
-    background: linear-gradient(111.72deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     color: $white;
   }
-
-
 }
 
 @media (max-width: $desktop-width) {
@@ -235,7 +233,6 @@
 @media (max-width: $tablet-width) {
   .subscription__wrapper {
     padding: 72px 15px 67px;
-
   }
 
   .subscription__title {
@@ -250,12 +247,9 @@
   }
 
   .subscription__toggle-link {
-    margin-right: 45px;
-  }
-
-  .subscription__toggle-link {
     font-size: 16px;
     line-height: 24px;
+    margin-right: 45px;
   }
 
   .subscription__price {

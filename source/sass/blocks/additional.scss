@@ -7,7 +7,7 @@
   display: flex;
 }
 
-@media(max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
   .additional__wrapper {
     @include container();
     flex-direction: column;

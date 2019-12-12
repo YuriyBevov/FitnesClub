@@ -74,8 +74,8 @@
             Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
           <p class="gym__text gym__text--bottom">
-             В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-             Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+            В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
+            Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
           </p>
         </div>
       </div>
@@ -459,22 +459,54 @@
   <section class="feedback">
     <div class="feedback__wrapper">
       <h2 class="feedback__title">Отзывы</h2>
-      <ul class="feedback__list">
-        <li class="feedback__item">
-          <picture class="feedback__avatar">
-            <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
+      <div class="feedback__slider-box">
+        <button type="button" class="feedback__slider-btn feedback__slider-btn--previous"><span class="visually-hidden">назад</span></button>
+        <button type="button" class="feedback__slider-btn feedback__slider-btn--next"><span class="visually-hidden">вперед</span></button>
+        <ul class="feedback__list">
+          <li class="feedback__item feedback__item--hidden">
+            <picture class="feedback__avatar">
+              <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
 
-            <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.jpg" srcset="img/feedback-author-avatar2x.jpg 2x" alt="Аватар">
-          </picture>
-          <div class="feedback__box">
-            <b class="feedback__author">Анна Орлова</b>
-            <p class="feedback__text">
-              «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-              Зал просторный, даже в вечернее время нет очередей»
-            </p>
-          </div>
-        </li>
-      </ul>
+              <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.jpg" srcset="img/feedback-author-avatar2x.jpg 2x" alt="Аватар">
+            </picture>
+            <div class="feedback__box">
+              <b class="feedback__author">Анна</b>
+              <p class="feedback__text">
+                «Хожу в SuperClub уже больше года.
+              </p>
+            </div>
+          </li>
+          <li class="feedback__item feedback__item--active">
+            <picture class="feedback__avatar">
+              <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
+
+              <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.jpg" srcset="img/feedback-author-avatar2x.jpg 2x" alt="Аватар">
+            </picture>
+            <div class="feedback__box">
+              <b class="feedback__author">Анна Орлова</b>
+              <p class="feedback__text">
+                «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                Зал просторный, даже в вечернее время нет очередей»
+              </p>
+            </div>
+          </li>
+
+          <li class="feedback__item feedback__item--hidden">
+            <picture class="feedback__avatar">
+              <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
+
+              <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.jpg" srcset="img/feedback-author-avatar2x.jpg 2x" alt="Аватар">
+            </picture>
+            <div class="feedback__box">
+              <b class="feedback__author">Анна Орлова</b>
+              <p class="feedback__text">
+                Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                Зал просторный, даже в вечернее время нет очередей»
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -487,9 +519,9 @@
               <h2 class="lesson__title">БЕСПЛАТНОЕ занятие</h2>
               <form action="#" method="post" class="lesson__form">
                 <label for="name" class="visually-hidden">Имя</label>
-                <input type="text" id="name" placeholder="имя">
+                <input type="text" class="lesson__input lesson__input--name" id="name" placeholder="имя">
                 <label for="phone" class="visually-hidden">Телефон</label>
-                <input type="text" id="phone" placeholder="телефон">
+                <input type="text" class="lesson__input lesson__input-phone" id="phone" placeholder="телефон">
                 <input type="submit" value="отправить">
               </form>
             </div>
@@ -562,21 +594,21 @@
       <div class="footer__social">
         <ul class="footer__social-list">
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--vk">
+            <a href="#" class="footer__social-link footer__social-link--vk" aria-label="ВКонтакте">
               <svg class="footer__social-svg footer__social-svg--vk" width="24" height="13">
                 <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--insta">
+            <a href="#" class="footer__social-link footer__social-link--insta" aria-label="Instagram">
               <svg class="footer__social-svg footer__social-svg--insta" width="24" height="24">
                 <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a href="#" class="footer__social-link footer__social-link--fb">
+            <a href="#" class="footer__social-link footer__social-link--fb" aria-label="Facebook">
               <svg class="footer__social-svg footer__social-svg--fb" width="12" height="24">
                 <use xlink:href="#icon-fb"></use>
               </svg>
