@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 115px 0;
+  padding: 114px 0 112px;
 }
 
 .advantages__title {
@@ -13,7 +13,7 @@
 
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 73px;
+  margin-bottom: 72px;
   color: $darkblue;
 }
 
@@ -109,7 +109,7 @@
 
 .advantages__box--experience {
   & .advantages__marker {
-    margin: 5px 34px 0 3px;
+    margin: 0px 34px 0 3px;
   }
 
   & .advantages__marker-image img {
@@ -256,6 +256,10 @@
     margin: 5px 33px 0 3px
   }
 
+  .advantages__box--experience .advantages__marker {
+    margin: 6px 34px 0 1px;
+  }
+
   .advantages__box--area {
     padding-left: 3px;
   }
@@ -269,6 +273,7 @@
 
 @media(max-width: $tablet-width) {
   .advantages__wrapper {
+    padding-bottom: 19px;
   }
 
   .advantages__title {
@@ -334,6 +339,4 @@
   .advantages__description {
     text-align: center;
   }
-
-
 }

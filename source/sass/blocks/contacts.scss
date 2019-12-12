@@ -4,7 +4,6 @@
 }
 
 .contacts__wrapper {
-  // outline: 1px solid red;
   max-width: 680px;
   height: 100%;
   display: flex;
@@ -16,7 +15,6 @@
 .contacts__content {
   width: 410px;
   min-height: 197px;
-  // outline: 1px solid blue;
   margin-left: auto;
   margin-right: 150px;
 }
@@ -54,8 +52,6 @@
 .contacts__right-box div {
   display: flex;
   flex-direction: column;
-
-  // outline: 1px solid black;
 }
 
 .contacts__left-box {
@@ -85,8 +81,17 @@
 .contacts__right-box a {
   @include font($font: $roboto, $size: 14px, $height: 21px);
   text-decoration: none;
-
   color: $darkblue;
+  transition: color 0.3s 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .contacts__phone-box {

@@ -1,15 +1,32 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+// скролл вниз к якорю()
 
-pageHeader.classList.remove('page-header--nojs');
+(function () {
+  var linkNav = document.querySelectorAll('.scroll-link');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
-  } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+  var SPEED = 0.5;
+  for (var i = 0; i < linkNav.length; i++) {
+    linkNav[i].addEventListener('click', function(evt) {
+        evt.preventDefault();
+
+        var height = window.pageYOffset;
+        var hash = this.href.replace(/[^#]*(.*)/, '$1');
+        var top = document.querySelector(hash).getBoundingClientRect().top;
+        var start = null;
+
+        requestAnimationFrame(step);
+
+        function step(time) {
+            if (start === null) start = time;
+            var progress = time - start;
+            var result = (top < 0 ? Math.max(height - progress/SPEED, height + top) : Math.min(height + progress/SPEED, height + top));
+            window.scrollTo(0,result);
+            if (result != height + top) {
+                requestAnimationFrame(step)
+            } else {
+                location.hash = hash;
+            }
+        }
+    }, false);
   }
-});
+})();

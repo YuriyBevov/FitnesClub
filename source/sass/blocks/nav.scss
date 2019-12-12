@@ -18,6 +18,17 @@
 
   text-decoration: none;
   color: $white;
+
+  transition: color 0.3s 0.1s;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .nav__item--logo {

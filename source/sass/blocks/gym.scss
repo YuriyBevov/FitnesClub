@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   min-height: 756px;
-  padding: 120px 100px 0;
+  padding: 120px 20px 0;
 }
 
 .gym__content {
@@ -58,7 +58,7 @@
 
 .gym__video-box {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 50.5%;
   max-width: 364px;

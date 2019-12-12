@@ -32,7 +32,7 @@
               <li class="header__content-item"><a href="#" class="header__content-link">Кардио-зона</a></li>
             </ul>
 
-            <a href="#subscription" class="header__btn">Купить абонемент</a>
+            <a href="#subscription" class="header__btn scroll-link">Купить абонемент</a>
           </div>
           <div class="header__image-box">
             <picture>
@@ -186,8 +186,40 @@
     </div>
   </section>
 
-  <section class="competition">
-    <div class="competition__wrapper">
+  <section class="promo">
+    <div class="promo__wrapper">
+
+        <div class="promo__content">
+          <div class="promo__content-box">
+            <div class="promo__header">
+              <h2 class="promo__title">SUPER GAMES</h2>
+
+              <div class="promo__calendar">
+                <div class="promo__date-box">
+                  <p class="promo__date-title">Дата</p>
+                  <p class="promo__date"><span class="promo__date-day">7</span><span class="promo__date-month">Марта</span><span class="promo__date-year">2019</span></p>
+                </div>
+
+                <div class="promo__time-box">
+                  <p class="promo__time-title">Время</p>
+                  <p class="promo__time">12:00</p>
+                </div>
+              </div>
+            </div>
+            <p class="promo__description">Ежегодные соревнования по CrossFit</p>
+            <a href="#" class="promo__btn">заполнить заявку</a>
+          </div>
+        </div>
+
+        <picture class="promo__image">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/promo-mobile-1x.webp 1x, img/promo-mobile-2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1199px)" srcset="img/promo-tablet-1x.webp 1x, img/promo-tablet-2x.webp 2x">
+            <source type="image/webp" srcset="img/promo1x.webp 1x, img/promo2x.webp 2x">
+
+            <source media="(max-width: 767px)" srcset="img/promo-mobile-1x.jpg 1x, img/promo-mobile-2x.jpg 2x">
+            <source media="(max-width: 1199px)" srcset="img/promo-tablet-1x.jpg 1x, img/promo-tablet-2x.jpg 2x">
+            <img class="promo__img" src="img/promo1x.jpg" srcset="img/promo2x.jpg 2x" alt="Афиша">
+        </picture>
 
     </div>
   </section>

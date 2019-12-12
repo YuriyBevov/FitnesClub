@@ -1,6 +1,6 @@
 .feedback__wrapper {
   @include container();
-  padding: 120px 100px;
+  padding: 115px 20px 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,7 +10,7 @@
   @include font($font: $bebas, $size: 49px, $height: 49px);
 
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
   letter-spacing: 0.03em;
   color: $darkblue;
 }
@@ -89,7 +89,7 @@
 
 @media(max-width: $desktop-width) {
   .feedback__wrapper {
-    padding: 100px 45px;
+    padding: 57px 45px 100px;
   }
 
   .feedback__title {
@@ -112,7 +112,7 @@
 }
 @media(max-width: $tablet-width) {
   .feedback__wrapper {
-    padding: 70px 15px;
+    padding: 67px 15px 70px;
   }
 
   .feedback__title {
