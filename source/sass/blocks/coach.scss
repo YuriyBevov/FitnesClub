@@ -22,34 +22,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
-  &::before {
-    position: absolute;
-    top: 50%;
-    left: -57px;
-    cursor: pointer;
-    width: 16px;
-    height: 32px;
-    transform: translateY(-50%);
-    content: "";
-    background-image: url("../img/arrow-left.svg");
-    background-size: 16px 32px;
-    background-repeat: no-repeat;
-  }
-
-  &::after {
-    position: absolute;
-    top: 50%;
-    right: -57px;
-    cursor: pointer;
-    width: 16px;
-    height: 32px;
-    transform: translateY(-50%);
-    content: "";
-    background-image: url("../img/arrow-right.svg");
-    background-size: 16px 32px;
-    background-repeat: no-repeat;
-  }
 }
 
 .coach__item {
@@ -153,6 +125,38 @@
   color: $grey;
 }
 
+.coach__item--hidden {
+  display: none;
+}
+
+.coach__slider-box {
+  position: relative;
+}
+
+.coach__slider-btn {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 32px;
+  content: "";
+  cursor: pointer;
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+
+  &--previous {
+    left: -57px;
+    background-image: url("../img/arrow-left.svg");
+  }
+
+  &--next {
+    right: -57px;
+    background-image: url("../img/arrow-right.svg");
+  }
+}
+
 @media (max-width: $desktop-width) {
   .coach__wrapper {
     display: flex;
@@ -186,10 +190,6 @@
   .coach__img {
     width: 268px;
   }
-
-  .hidden {  //temp для лишек пока нет js
-    display: none;
-  }
 }
 
 @media (max-width: $tablet-width) {
@@ -198,20 +198,25 @@
   }
 
   .coach__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-width: 226px;
+  }
 
-    &::before {
-      width: 10px;
-      height: 19px;
-      background-size: 100%;
+  .coach__slider-btn {
+    top: 47.2%;
+    width: 10px;
+    height: 19px;
+
+    &--previous {
+      background-size: 10px 19px;
       left: -32px;
     }
 
-    &::after {
-      width: 10px;
-      height: 19px;
-      background-size: 100%;
-      right: -32px;
+    &--next {
+      background-size: 10px 19px;
+      right: -36px;
     }
   }
 
@@ -220,6 +225,15 @@
     margin-right: 0;
     max-width: 226px;
     height: 274px;
+    margin-bottom: 20px;
+
+    &:nth-child(2n) {
+      margin-bottom: 20px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .coach__img {
@@ -231,9 +245,5 @@
     @include font ($font: $bebas, $size: 32px, $height: 32px);
 
     margin-bottom: 45px;
-  }
-
-  .tablet-hidden { // temp для лишки пока нет js
-    display: none;
   }
 }

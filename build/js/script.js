@@ -96,5 +96,45 @@
 // тренеры слайдер
 
 (function () {
-  
+  var sliderItem = document.querySelectorAll('.coach__item');
+  var slidesToShow;
+  var currentWidth = window.innerWidth;
+
+  var showSlides = function (slidesToShow) {
+    showAllSlides();
+    for (var i = slidesToShow; i < sliderItem.length; i++) {
+      sliderItem[i].classList.add('coach__item--hidden');
+    }
+  }
+
+  var setSlidesCount = function (currentWidth) {
+    if (currentWidth < 768) {
+      slidesToShow = 1;
+
+      showSlides(slidesToShow);
+    } else if (currentWidth > 767 && currentWidth < 1200) {
+      slidesToShow = 2;
+
+      showSlides(slidesToShow);
+    } else if (currentWidth > 1199) {
+      slidesToShow = 4;
+
+      showSlides(slidesToShow);
+    }
+  };
+
+  var showAllSlides = function () {
+    for (var i = 0; i< sliderItem.length; i++) {
+      if(sliderItem[i].classList.contains('coach__item--hidden')) {
+        sliderItem[i].classList.remove('coach__item--hidden');
+      }
+    }
+  }
+
+  window.addEventListener('resize', function () {
+    currentWidth = window.innerWidth;
+    setSlidesCount(currentWidth);
+  });
+
+  setSlidesCount(currentWidth);
 })();

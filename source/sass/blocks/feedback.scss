@@ -136,19 +136,18 @@
   .feedback__list {
     width: 226px;
     min-height: 335px;
+  }
 
-    &::before,
-    &::after {
-      width: 10px;
-      height: 19px;
-      background-size: 10px 19px;
-    }
+  .feedback__slider-btn {
+    width: 10px;
+    height: 19px;
+    background-size: 10px 19px;
 
-    &::before {
+    &--previous {
       left: -31px;
     }
 
-    &::after {
+    &--next {
       right: -31px;
     }
   }
