@@ -4643,11 +4643,3 @@ exports.default = IMask;
 Object.defineProperty(exports, '__esModule', { value: true });
 
 }));
-//# sourceMappingURL=imask.js.map
-
-(function () {
-var phoneMask = IMask(
-  document.getElementById('lesson-phone'), {
-    mask: '+{7}(000)000-00-00'
-  });
-})();
