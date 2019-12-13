@@ -10,23 +10,46 @@
   @include font($font: $bebas, $size: 49px, $height: 49px);
 
   margin: 0;
+  margin-bottom: 55px;
   letter-spacing: 0.03em;
   color: $darkblue;
 }
 
 .feedback__list {
+  position: relative;
+  width: 560px;
+
   list-style: none;
   margin: 0;
+  padding: 0;
+  box-shadow: 0 0 40px rgba(28, 51, 116, 0.2);
+}
+
+.feedback__item-wrapper {
+  width: 560px;
+  display: flex;
+  // padding: 54px 60px;
+  background: $lightblue;
 }
 
 .feedback__item {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 242px;
+}
 
+.feedback__content-box {
+  display: flex;
+  width: 560px;
+  padding: 54px 60px;
 }
 
 .feedback__author {
   @include font($font: $robotoBold, $size: 20px, $height: 30px);
 
   display: block;
+  margin-bottom: 13px;
   color: $white;
 }
 
@@ -38,7 +61,8 @@
 }
 
 .feedback__avatar {
-
+  margin-right: auto;
+  margin-top: 8px;
 
   &-img {
     width: 80px;
@@ -46,22 +70,52 @@
   }
 }
 
-.swiper-container {
-  width: 560px;
-  height: 100%;
+.feedback__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 330px;
 }
 
-.swiper-slide {
-  text-align: center;
-  background: $lightblue;
+.feedback__slider-box.swiper-container {
+  width: 672px;
+  height: 242px;
 }
 
 .swiper-button-next {
+  top: 50%;
+  right: 0;
+  width: 16px;
+  height: 32px;
+  content: "";
+  cursor: pointer;
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
 
+  color: transparent;
+  background-image: url("../img/arrow-right.svg");
 }
 
 .swiper-button-prev {
+  top: 50%;
+  left: 0;
+  width: 16px;
+  height: 32px;
+  content: "";
+  cursor: pointer;
+  background-size: 16px 32px;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  margin-top: 0;
 
+  color: transparent;
+  background-image: url("../img/arrow-left.svg");
 }
 
 @media (max-width: $desktop-width) {
@@ -101,20 +155,6 @@
   .feedback__list {
     width: 226px;
     min-height: 335px;
-  }
-
-  .feedback__slider-btn {
-    width: 10px;
-    height: 19px;
-    background-size: 10px 19px;
-
-    &--previous {
-      left: -31px;
-    }
-
-    &--next {
-      right: -31px;
-    }
   }
 
   .feedback__item {
