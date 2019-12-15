@@ -20,11 +20,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  max-width: 200px;
-  margin: 0 auto;
-  padding-top: 34px;
-  padding-bottom: 45px;
-  padding-left: 6px;
+  padding: 34px 40px 45px 46px;
 }
 
 .main-offer__year {
@@ -95,6 +91,7 @@
 
 
   .main-offer__box {
+    max-width: 290px;
     & picture {
       height: 50%;
     }
@@ -102,11 +99,11 @@
 
   .main-offer__wrapper {
     align-items: center;
-    padding-left: 0;
-    padding-bottom: 45px;
+    padding-right: 46px;
   }
 
   .main-offer__description {
+    width: 200px;
     flex-grow: 0;
     text-align: center;
     margin-bottom: 30px;

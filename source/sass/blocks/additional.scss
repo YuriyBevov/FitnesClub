@@ -9,7 +9,7 @@
 
 @media (max-width: $desktop-width) {
   .additional__wrapper {
-    @include container();
+    margin-left: 0 auto;
     flex-direction: column;
   }
 }
