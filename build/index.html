@@ -8,6 +8,10 @@
   <title>SuperGym</title>
   <link rel="stylesheet" href="css/style.min.css">
 
+  <script>
+    document.createElement( "picture" );
+  </script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 <body>
   <div style="display:none">
@@ -133,26 +137,18 @@
     <div class="subscription__wrapper">
       <h2 class="subscription__title">Абонементы</h2>
 
-      <!-- ползунок -->
-
       <div class="subscription__toggle-box">
-        <ul class="subscription__toggle-list">
-          <li class="subscription__toggle-item">
-            <a href="#" class="subscription__toggle-link subscription__toggle-link--active">1 месяц</a>
-          </li>
-          <li class="subscription__toggle-item">
-            <a href="#" class="subscription__toggle-link">6 месяцев</a>
-          </li>
-          <li class="subscription__toggle-item">
-            <a href="#" class="subscription__toggle-link">12 месяцев</a>
-          </li>
-        </ul>
-        <div class="subscription__toggle-line">
-          <div class="subscription__toggle-pin"></div>
-        </div>
+        <input type="radio" name="subscription-type" id="month" checked="">
+        <label for="month" class="subscription__toggle-label" id="0">1 месяц</label>
+
+        <input type="radio" name="subscription-type" id="half-year">
+        <label for="half-year" class="subscription__toggle-label" id="1">6 месяцев</label>
+
+        <input type="radio" name="subscription-type" id="year">
+        <label for="year" class="subscription__toggle-label" id="2">12месяцев</label>
       </div>
 
-      <ul class="subscription__list">
+      <ul class="subscription__list ">
         <li class="subscription__item">
           <div class="subscription__box">
             <b class="subscription__name">С тренером</b>
@@ -202,6 +198,107 @@
           </div>
         </li>
       </ul>
+      <ul class="subscription__list subscription__list--hidden">
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">С тренером</b>
+            <p class="subscription__description">12 занятий</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">21000</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">21000</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Дневной</b>
+            <p class="subscription__description">с 8:00 до 17:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">6500</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">6500</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Полный день</b>
+            <p class="subscription__description">с 8:00 до 22:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">10500</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">10500</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="subscription__list subscription__list--hidden">
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">С тренером</b>
+            <p class="subscription__description">12 занятий</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">35000</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">35000</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Дневной</b>
+            <p class="subscription__description">с 8:00 до 17:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">15000</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">15000</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+        <li class="subscription__item">
+          <div class="subscription__box">
+            <b class="subscription__name">Полный день</b>
+            <p class="subscription__description">с 8:00 до 22:00</p>
+            <div class="subscription__price-box">
+              <p class="subscription__price">25000</p>
+              <div class="subscription__price-before">
+                <span class="subscription__small-price">25000</span>
+                <svg class="subscription__rubble" width="30" height="42">
+                  <use xlink:href="#icon-rubble"></use>
+                </svg>
+              </div>
+            </div>
+            <a href="#" class="subscription__btn">купить абонемент</a>
+          </div>
+        </li>
+      </ul>
+
     </div>
   </section>
 
@@ -243,97 +340,224 @@
     </div>
   </section>
 
-  <section class="coach">
+  <!--<section class="coach">
     <div class="coach__wrapper">
       <h2 class="coach__title">Тренеры</h2>
-      <div class="coach__slider-box">
-        <button type="button" class="coach__slider-btn coach__slider-btn--previous"><span class="visually-hidden">назад</span></button>
-        <button type="button" class="coach__slider-btn coach__slider-btn--next"><span class="visually-hidden">вперед</span></button>
-        <ul class="coach__list">
-          <li class="coach__item coach__item--active">
-            <a href="#" class="coach__link">
-              <picture>
-                <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
+      <div class="coach__slider-box swiper-container">
 
-                <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
-              </picture>
+        <ul class="coach__list swiper-wrapper">
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
 
-              <div class="coach__info">
-                <p class="coach__name">Анна Павлова</p>
-                <p class="coach__type">CrossFit</p>
-                <ul class="coach__advantages-list">
-                  <li class="coach__advantages-item">Certified Level 3 Trainer</li>
-                  <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="coach__advantages-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </a>
+              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Анна Павлова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach2-1x.webp 1x, img/coach2-2x.webp 2x">
 
+              <img class="coach__img" src="img/coach2-1x.jpg" srcset="img/coach2-2x.jpg 2x" alt="Тренер">
+            </picture>
 
-          <li class="coach__item">
-            <a href="#" class="coach__link">
-              <picture>
-                <source type="image/webp" srcset="img/coach2-1x.webp 1x, img/coach2-2x.webp 2x">
-
-                <img class="coach__img" src="img/coach2-1x.jpg" srcset="img/coach2-2x.jpg 2x" alt="Тренер">
-              </picture>
-
-              <div class="coach__info">
-                <p class="coach__name">Алексей Лавров</p>
-                <p class="coach__type">CrossFit</p>
-                <ul class="coach__advantages-list">
-                  <li class="coach__advantages-item">Certified Level 3 Trainer</li>
-                  <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="coach__advantages-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </a>
+            <div class="coach__info">
+              <p class="coach__name">Алексей Лавров</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach3-1x.webp 1x, img/coach3-2x.webp 2x">
 
-          <li class="coach__item">
-            <a href="#" class="coach__link">
-              <picture>
-                <source type="image/webp" srcset="img/coach3-1x.webp 1x, img/coach3-2x.webp 2x">
+              <img class="coach__img" src="img/coach3-1x.jpg" srcset="img/coach3-2x.jpg 2x" alt="Тренер">
+            </picture>
 
-                <img class="coach__img" src="img/coach3-1x.jpg" srcset="img/coach3-2x.jpg 2x" alt="Тренер">
-              </picture>
-
-              <div class="coach__info">
-                <p class="coach__name">Александр Пашков</p>
-                <p class="coach__type">CrossFit</p>
-                <ul class="coach__advantages-list">
-                  <li class="coach__advantages-item">Certified Level 3 Trainer</li>
-                  <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="coach__advantages-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </a>
+            <div class="coach__info">
+              <p class="coach__name">Александр Пашков</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
 
-          <li class="coach__item">
-            <a href="#" class="coach__link">
-              <picture>
-                <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
 
-                <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
-              </picture>
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
 
-              <div class="coach__info">
-                <p class="coach__name">Мария Кетова</p>
-                <p class="coach__type">CrossFit</p>
-                <ul class="coach__advantages-list">
-                  <li class="coach__advantages-item">Certified Level 3 Trainer</li>
-                  <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="coach__advantages-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </a>
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coach__item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+
+            <div class="coach__info">
+              <p class="coach__name">Мария Кетова</p>
+              <p class="coach__type">CrossFit</p>
+              <ul class="coach__advantages-list">
+                <li class="coach__advantages-item">Certified Level 3 Trainer</li>
+                <li class="coach__advantages-item">Победитель чемпионата России по CrossFit</li>
+                <li class="coach__advantages-item">Опыт — 6 лет</li>
+              </ul>
+            </div>
           </li>
         </ul>
+        <div class="coach__btn swiper-button-prev"></div>
+        <div class="coach__btn swiper-button-next"></div>
       </div>
     </div>
-  </section>
+  </section>-->
+
+<!--  <section class="coach">
+    <div class="coach__wrapper">
+      <div class="coach__slider-box swiper-container">
+        <div class="coach__slider-wrapper swiper-wrapper">
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach2-1x.webp 1x, img/coach2-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach2-1x.jpg" srcset="img/coach2-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach3-1x.webp 1x, img/coach3-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach3-1x.jpg" srcset="img/coach3-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+          <div class="coach__slider-item swiper-slide">
+            <picture>
+              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
+
+              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="coach__btn swiper-button-prev"></div>
+      <div class="coach__btn swiper-button-next"></div>
+    </div>
+  </section> -->
 
   <section class="advantages">
     <div class="advantages__wrapper">
@@ -347,8 +571,8 @@
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/area-tablet-1x.webp 1x, img/area-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/area1x.webp 1x, img/area2x.webp 2x">
 
-                <source media="(max-width: 767px)" srcset="img/area-mobile-1x.jpg 1x, img/area-mobile-2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/area-tablet-1x.jpg 1x, img/area-tablet-2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/area-mobile-1x.png 1x, img/area-mobile-2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/area-tablet-1x.png 1x, img/area-tablet-2x.png 2x">
                 <img src="img/area1x.png" srcset="img/area2x.png 2x" alt="Площадь">
               </picture>
 
@@ -369,8 +593,8 @@
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/parking-tablet-1x.webp 1x, img/parking-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/parking1x.webp 1x, img/parking2x.webp 2x">
 
-                <source media="(max-width: 767px)" srcset="img/parking-mobile-1x.jpg 1x, img/parking-mobile-2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/parking-tablet-1x.jpg 1x, img/parking-tablet-2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/parking-mobile-1x.png 1x, img/parking-mobile-2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/parking-tablet-1x.png 1x, img/parking-tablet-2x.png 2x">
                 <img src="img/parking1x.png" srcset="img/parking2x.png 2x" alt="Собственная парковка">
               </picture>
 
@@ -383,13 +607,11 @@
           </div>
         </li>
 
-
         <li class="advantages__item advantages__item--gym">
           <b class="advantages__marker advantages__marker--gym">100</b>
           <p class="advantages__marker-gloss advantages__marker-gloss--gym">Тренажеров</p>
           <p class="advantages__description advantages__description--gym">Современные тренажеры на все группы мышц</p>
         </li>
-
 
         <li class="advantages__item">
           <div class="advantages__box advantages__box--comfort">
@@ -399,8 +621,8 @@
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/comfort-tablet-1x.webp 1x, img/comfort-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/comfort1x.webp 1x, img/comfort2x.webp 2x">
 
-                <source media="(max-width: 767px)" srcset="img/comfort-mobile-1x.jpg 1x, img/comfort-mobile-2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/comfort-tablet-1x.jpg 1x, img/comfort-tablet-2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/comfort-mobile-1x.png 1x, img/comfort-mobile-2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/comfort-tablet-1x.png 1x, img/comfort-tablet-2x.png 2x">
                 <img src="img/comfort1x.png" srcset="img/comfort2x.png 2x" alt="Комфорт">
               </picture>
 
@@ -421,8 +643,8 @@
                 <source type="image/webp" media="(max-width: 1199px)" srcset="img/experience-tablet-1x.webp 1x, img/experience-tablet-2x.webp 2x">
                 <source type="image/webp" srcset="img/experience1x.webp 1x, img/experience2x.webp 2x">
 
-                <source media="(max-width: 767px)" srcset="img/experience-mobile-1x.jpg 1x, img/experience-mobile-2x.jpg 2x">
-                <source media="(max-width: 1199px)" srcset="img/experience-tablet-1x.jpg 1x, img/experience-tablet-2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="img/experience-mobile-1x.png 1x, img/experience-mobile-2x.png 2x">
+                <source media="(max-width: 1199px)" srcset="img/experience-tablet-1x.png 1x, img/experience-tablet-2x.png 2x">
                 <img src="img/experience1x.png" srcset="img/experience2x.png 2x" alt="Тренерский опыт">
               </picture>
 
@@ -544,7 +766,7 @@
 
         </ul>
         <div class="swiper-button-prev"></div>
-         <div class="swiper-button-next"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </div>
   </section>

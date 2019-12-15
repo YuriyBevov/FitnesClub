@@ -34,7 +34,7 @@
 .gym__text {
   @include font($font: $robotoLight, $size: 16px, $height: 24px);
 
-  max-width: 355px;
+  width: 355px;
   font-weight: 300;
   margin: 0;
   margin-bottom: 8px;
@@ -96,7 +96,6 @@
     border: 0;
     border-radius: 0;
     cursor: pointer;
-
     background-color: transparent;
     background-image: url("../img/play-btn1x.png");
     background-repeat: no-repeat;
@@ -146,7 +145,7 @@
   }
 
   .gym__text {
-    max-width: 502px;
+    width: 510px;
     text-align: center;
 
     &--bottom {
@@ -215,7 +214,7 @@
   }
 
   .gym__text {
-    max-width: 260px;
+    width: 260px;
     text-align: left;
   }
 

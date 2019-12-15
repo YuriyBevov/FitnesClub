@@ -110,9 +110,10 @@
 .header__title {
   @include font($font: $bebas, $size: 109px, $height: 109px);
 
+  width: 400px;
   margin: 0;
   margin-bottom: 60px;
-  padding-left: 75px;
+  padding-left: 100px;
   letter-spacing: 0.03em;
   color: $white;
 }
@@ -219,8 +220,12 @@
 
   .header__content {
     max-width: 325px;
-    margin-right: auto;
+    margin-right: 27px;
     padding-top: 30px;
+
+    &-box {
+      width: 678px;
+    }
   }
 
   .header__content-list {
@@ -238,6 +243,16 @@
     font-size: 86px;
     line-height: 86px;
     margin-bottom: 45px;
+  }
+
+  .header__image-box {
+    width: 324px;
+    height: 390px;
+  }
+
+  .header__img {
+    width: 324px;
+    height: 390px;
   }
 
   .header__btn {
@@ -260,8 +275,13 @@
     padding: 18px 15px;
   }
 
+  .header__inner {
+    width: 290px;
+  }
+
   .header__content {
-    max-width: 290px;
+    width: 290px;
+    margin-right: 0;
     padding-top: 53px;
   }
 
