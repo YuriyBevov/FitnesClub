@@ -1,7 +1,7 @@
 .contacts {
   width: 50%;
   min-height: 337px;
-  border-top : 1px solid $blue-brd;
+  border-top: 1px solid $blue-brd;
 }
 
 .contacts__wrapper {
@@ -160,6 +160,7 @@
   .contacts {
     border-top: 0;
   }
+
   .contacts__wrapper {
     padding-top: 67px;
     max-width: 320px;

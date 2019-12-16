@@ -42,11 +42,11 @@
 }
 
 .subscription__toggle-box {
-    display: flex;
-    height: 46px;
-    margin-left: -3px;
-    margin-bottom: 38px;
-    border-bottom: 2px solid rgba(120, 120, 120, 0.2);
+  display: flex;
+  height: 46px;
+  margin-left: -3px;
+  margin-bottom: 38px;
+  border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
 input[type="radio"] {
@@ -199,7 +199,6 @@ input[type="radio"] {
 
 @media (max-width: $desktop-width) {
   .subscription {
-
     &::after {
       bottom: -82.2%;
       right: -3px;
@@ -256,7 +255,6 @@ input[type="radio"] {
 
 @media (max-width: $tablet-width) {
   .subscription {
-
     &::after {
       background-image: none;
     }

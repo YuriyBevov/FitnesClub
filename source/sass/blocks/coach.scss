@@ -12,7 +12,6 @@
 }
 
 .coach__title {
-
   @include font($font: $bebas, $size: 49px, $height: 49px);
 
   letter-spacing: 0.03em;
