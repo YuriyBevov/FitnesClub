@@ -1,6 +1,6 @@
 .promo__wrapper {
   @include container();
-  padding: 119px 20px 0;
+  padding: 119px 20px 115px;
   display: flex;
   min-height: 500px;
 }
@@ -134,7 +134,7 @@
 
 @media (max-width: $desktop-width) {
   .promo__wrapper {
-    padding: 102px 45px 0;
+    padding: 101px 45px 96px;
     min-height: 292px;
   }
 
@@ -156,7 +156,11 @@
   .promo__description {
     font-size: 12px;
     line-height: 12px;
-    margin-bottom: 31px;
+    margin-bottom: 34px;
+  }
+
+  .promo__calendar {
+    margin-top: 3px;
   }
 
   .promo__date-box {
@@ -204,7 +208,7 @@
     min-height: 39px;
     font-size: 10px;
     line-height: 10px;
-    padding: 15px 10px 13px;
+    padding: 15px 10px 12px;
     border: 2px solid $white;
   }
 }
@@ -213,7 +217,7 @@
   .promo__wrapper {
     width: 320px;
     flex-direction: column;
-    padding: 70px 15px 0;
+    padding: 72px 15px 67px;
   }
 
   .promo__content {
@@ -226,11 +230,12 @@
   }
 
   .promo__header {
-    margin-bottom: 2px;
+    margin-top: -3px;
+    margin-bottom: 5px;
   }
 
   .promo__description {
-    margin-bottom: 32px;
+    margin-bottom: 33px;
   }
 
   .promo__date-box {

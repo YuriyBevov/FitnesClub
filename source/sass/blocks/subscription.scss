@@ -1,6 +1,25 @@
 .subscription {
+  position: relative;
   background-color: $lightgrey;
   min-height: 851px;
+
+  &::after {
+    position: absolute;
+    bottom: -59.3%;
+    right: -35px;
+    width: 321px;
+    height: 100%;
+    content: "";
+    background-image: url("../img/kettle1x.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    z-index: 0;
+
+    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+      background-image: url("../img/kettle2x.png");
+      background-size: 321px auto;
+    }
+  }
 }
 
 .subscription__wrapper {
@@ -60,6 +79,7 @@ input[type="radio"] {
 }
 
 .subscription__list {
+  position: relative;
   width: 100%;
   max-width: 1160px;
   display: flex;
@@ -67,6 +87,7 @@ input[type="radio"] {
   list-style: none;
   margin: 0;
   padding: 0;
+  z-index: 10;
 
   &--hidden {
     display: none;
@@ -93,10 +114,6 @@ input[type="radio"] {
     background-image: url("../img/subscription-brd1x.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
-    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-      background-image: url("../img/subscription-brd2x.png");
-    }
   }
 }
 
@@ -181,6 +198,21 @@ input[type="radio"] {
 }
 
 @media (max-width: $desktop-width) {
+  .subscription {
+
+    &::after {
+      bottom: -82.2%;
+      right: -3px;
+      width: 350px;
+      background-image: url("../img/kettle-tablet-1x.png");
+
+      @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+        background-image: url("../img/kettle-tablet-2x.png");
+        background-size: 347px auto;
+      }
+    }
+  }
+
   .subscription__wrapper {
     padding-top: 97px;
     padding-bottom: 98px;
@@ -189,7 +221,7 @@ input[type="radio"] {
   .subscription__title {
     font-size: 42px;
     line-height: 42px;
-    margin-bottom: 27px;
+    margin-bottom: 33px;
   }
 
   .subscription__list {
@@ -198,6 +230,7 @@ input[type="radio"] {
   }
 
   .subscription__item {
+    width: 442px;
     max-width: 442px;
     margin-right: 0;
     margin-bottom: 40px;
@@ -208,6 +241,8 @@ input[type="radio"] {
   }
 
   .subscription__toggle-box {
+    min-width: 332px;
+    height: 40px;
     margin-bottom: 45px;
     margin-left: 2px;
   }
@@ -215,10 +250,18 @@ input[type="radio"] {
   .subscription__toggle-label {
     font-size: 18px;
     line-height: 27px;
+    margin-right: auto;
   }
 }
 
 @media (max-width: $tablet-width) {
+  .subscription {
+
+    &::after {
+      background-image: none;
+    }
+  }
+
   .subscription__wrapper {
     padding: 72px 15px 67px;
   }
@@ -269,7 +312,7 @@ input[type="radio"] {
   }
 
   .subscription__item {
-    min-width: 290px;
+    width: 290px;
     min-height: 384px;
     margin-bottom: 35px;
     padding-top: 38px;

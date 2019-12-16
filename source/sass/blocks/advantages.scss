@@ -27,7 +27,7 @@
   &--gym {
     @include font($font: $robotoBold, $size: 26px, $height: 39px);
 
-    margin-bottom: 33px;
+    margin-bottom: 36px;
     color: $white;
   }
 }
@@ -274,6 +274,7 @@
 
 @media (max-width: $tablet-width) {
   .advantages__wrapper {
+    padding-top: 67px;
     padding-bottom: 19px;
   }
 
