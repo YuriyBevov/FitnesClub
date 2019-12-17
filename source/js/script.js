@@ -3,10 +3,14 @@
 // маска на инпут
 
 (function () {
-var phoneMask = IMask(
-  document.getElementById('lesson-phone'), {
-    mask: '+{7}(000)000-00-00'
-  });
+  var phoneInput = document.getElementById('lesson-phone');
+
+  if (phoneInput) {
+    var phoneMask = IMask(
+      phoneInput, {
+        mask: '+{7}(000)000-00-00'
+      });
+  }
 })();
 
 // Табы

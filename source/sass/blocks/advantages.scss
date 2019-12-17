@@ -126,20 +126,15 @@
   max-width: 570px;
   min-height: 155px;
 
-  &:nth-child(1) {
+  &:first-child {
     margin-right: auto;
   }
 
-  &:nth-child(odd):not(:nth-child(2)) {
+  &:nth-child(odd):not(:nth-child(2n)) {
     margin-right: auto;
   }
 
-  &:nth-child(2) {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  &:nth-child(odd):not(:nth-child(1)):not(:nth-child(3)) {
+  &:nth-child(odd):not(:first-child):not(:nth-child(3n)) {
     display: flex;
     justify-content: flex-end;
   }
@@ -159,6 +154,11 @@
     padding-top: 55px;
     background-color: $lightblue;
   }
+}
+
+.advantages__item--parking {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .advantages__content {

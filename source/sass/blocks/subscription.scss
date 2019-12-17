@@ -32,7 +32,7 @@
   align-items: center;
 }
 
-.subscription__title {
+.subscription h2 {
   @include font($font: $bebas, $size: 49px, $height: 49px);
 
   margin: 0;
@@ -217,7 +217,7 @@ input[type="radio"] {
     padding-bottom: 98px;
   }
 
-  .subscription__title {
+  .subscription h2 {
     font-size: 42px;
     line-height: 42px;
     margin-bottom: 33px;
@@ -264,7 +264,7 @@ input[type="radio"] {
     padding: 72px 15px 67px;
   }
 
-  .subscription__title {
+  .subscription h2 {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 23px;

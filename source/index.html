@@ -11,7 +11,7 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.min.js" async></script>
+
 </head>
 <body>
   <div style="display:none">
@@ -20,7 +20,7 @@
   <header class="header">
     <div class="header__wrapper">
       <div class="header__bar">
-        <b class="header__bar-logo">Supergym</b>
+        <a class="header__bar-logo">Supergym</a>
         <a href="tel:8800555555" class="header__bar-phone">8-800-555-55-55</a>
       </div>
 
@@ -46,7 +46,8 @@
 
 
               <source media="(max-width: 1199px)" srcset="img/superman-tablet-1x.jpg 1x, img/superman-tablet-2x.jpg 2x">
-              <img class="header__img" src="img/superman1x.jpg" srcset="img/superman2x.jpg 2x" alt="Спортсмен">
+              <!-- 1x - 500 , 2x - 1000 -->
+              <img src="img/superman1x.jpg" srcset="img/superman2x.jpg 2x" alt="Спортсмен">
             </picture>
           </div>
         </div>
@@ -92,20 +93,18 @@
 
           <source media="(max-width: 767px)" srcset="img/gym-mobile-1x.jpg 1x, img/gym-mobile-2x.jpg 2x">
           <source media="(max-width: 1199px)" srcset="img/gym-tablet-1x.jpg 1x, img/gym-tablet-2x.jpg 2x">
+          <!-- 1x - 660, 2x - 1320 -->
           <img class="gym__img" src="img/gym1x.jpg" srcset="img/gym2x.jpg 2x" alt="Тренажерный зал">
         </picture>
 
         <div class="gym__video-box">
           <div class="gym__video-box-content">
             <picture>
-              <source type="image/webp" media="(max-width: 767px)" srcset="img/gym-video-mask-mobile-1x.webp 1x, img/gym-video-mask-mobile-2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1199px)" srcset="img/gym-video-mask-tablet-1x.webp 1x, img/gym-video-mask-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/gym-video-mask1x.webp 1x, img/gym-video-mask2x.webp 2x">
 
-              <source media="(max-width: 767px)" srcset="img/gym-video-mask-mobile-1x.jpg 1x, img/gym-video-mask-mobile-2x.jpg 2x">
-              <source media="(max-width: 1199px)" srcset="img/gym-video-mask-tablet-1x.jpg 1x, img/gym-video-mask-tablet-2x.jpg 2x">
-              <img class="gym__video" src="img/gym-video-mask1x.jpg" srcset="img/gym-video-mask2x.jpg 2x" alt="Видео">
+              <img src="img/gym-video-mask1x.jpg" srcset="img/gym-video-mask2x.jpg 2x" alt="Видео">
             </picture>
+
             <div class="gym__video-mask">
               <button type="button" class="gym__video-play-btn"><span class="visually-hidden">Воспроизвести</span></button>
             </div>
@@ -316,6 +315,7 @@
 
             <source media="(max-width: 767px)" srcset="img/promo-mobile-1x.jpg 1x, img/promo-mobile-2x.jpg 2x">
             <source media="(max-width: 1199px)" srcset="img/promo-tablet-1x.jpg 1x, img/promo-tablet-2x.jpg 2x">
+            <!--1x - 660px,2x - 1320px -->
             <img class="promo__img" src="img/promo1x.jpg" srcset="img/promo2x.jpg 2x" alt="Афиша">
         </picture>
 
@@ -332,9 +332,9 @@
 
           <div class="coach__slider-item swiper-slide">
             <picture>
-              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-1x.webp 2x">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-1x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -350,8 +350,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach2-1x.webp 1x, img/coach2-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach2-1x.jpg" srcset="img/coach2-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach2-1x.jpg" srcset="img/coach2-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Алексей Лавров</p>
@@ -367,8 +367,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach3-1x.webp 1x, img/coach3-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach3-1x.jpg" srcset="img/coach3-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach3-1x.jpg" srcset="img/coach3-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Александр Пашков</p>
@@ -384,8 +384,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach4-1x.webp 1x, img/coach4-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach4-1x.jpg" srcset="img/coach4-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Мария Кетова</p>
@@ -401,8 +401,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -418,8 +418,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -435,8 +435,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -452,8 +452,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -469,8 +469,8 @@
           <div class="coach__slider-item swiper-slide">
             <picture>
               <source type="image/webp" srcset="img/coach1-1x.webp 1x, img/coach1-2x.webp 2x">
-
-              <img class="coach__img" src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
+              <!--1x - 260px,2x - 520px -->
+              <img src="img/coach1-1x.jpg" srcset="img/coach1-2x.jpg 2x" alt="Тренер">
             </picture>
             <div class="coach__info">
               <p class="coach__name">Анна Павлова</p>
@@ -515,7 +515,7 @@
           </div>
         </li>
 
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--parking">
           <div class="advantages__box advantages__box--parking">
             <div class="advantages__marker">
               <picture class="advantages__marker-image">
@@ -611,7 +611,8 @@
 
               <source media="(max-width: 767px)" srcset="img/girl-mobile-1x.jpg 1x, img/girl-mobile-2x.jpg 2x">
               <source media="(max-width: 1199px)" srcset="img/girl-tablet-1x.jpg 1x, img/girl-tablet-2x.jpg 2x">
-              <img class="main-offer__img" src="img/girl1x.jpg" srcset="img/girl2x.jpg 2x" alt="Девушка">
+              <!-- 1x - 280px, 2x - 560px -->
+              <img src="img/girl1x.jpg" srcset="img/girl2x.jpg 2x" alt="Девушка">
             </picture>
           </div>
         </li>
@@ -640,10 +641,33 @@
           <li class="feedback__item swiper-slide">
             <div class="feedback__item-wrapper">
               <div class="feedback__content-box">
-                <picture class="feedback__avatar">
+                <picture>
                   <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
+                  <!-- 1x -80px , 2x - 160px -->
+                  <img src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
+                </picture>
+                <div class="feedback__box">
+                  <b class="feedback__author">Анна Орлова</b>
+                  <p class="feedback__text">
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»
+                    «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
+                    Зал просторный, даже в вечернее время нет очередей»
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
 
-                  <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
+          <li class="feedback__item swiper-slide">
+            <div class="feedback__item-wrapper">
+              <div class="feedback__content-box">
+                <picture>
+                  <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
+                  <!-- 1x -80px , 2x - 160px -->
+                  <img src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
                 </picture>
                 <div class="feedback__box">
                   <b class="feedback__author">Анна Орлова</b>
@@ -659,29 +683,10 @@
           <li class="feedback__item swiper-slide">
             <div class="feedback__item-wrapper">
               <div class="feedback__content-box">
-                <picture class="feedback__avatar">
+                <picture>
                   <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
-
-                  <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
-                </picture>
-                <div class="feedback__box">
-                  <b class="feedback__author">Анна Орлова</b>
-                  <p class="feedback__text">
-                    «Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный.
-                    Зал просторный, даже в вечернее время нет очередей»
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="feedback__item swiper-slide">
-            <div class="feedback__item-wrapper">
-              <div class="feedback__content-box">
-                <picture class="feedback__avatar">
-                  <source type="image/webp" srcset="img/feedback-author-avatar1x.webp 1x, img/feedback-author-avatar2x.webp 2x">
-
-                  <img class="feedback__avatar-img" src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
+                  <!-- 1x -80px , 2x - 160px -->
+                  <img src="img/feedback-author-avatar1x.png" srcset="img/feedback-author-avatar2x.png 2x" alt="Аватар">
                 </picture>
                 <div class="feedback__box">
                   <b class="feedback__author">Анна Орлова</b>
@@ -710,10 +715,10 @@
               <h2 class="lesson__title">БЕСПЛАТНОЕ занятие</h2>
               <form action="#" method="post" class="lesson__form">
                 <label for="lesson-name" class="visually-hidden">Имя</label>
-                <input type="text" class="lesson__input lesson__input--name" id="lesson-name" placeholder="имя">
+                <input type="text" id="lesson-name" placeholder="имя">
                 <label for="lesson-phone" class="visually-hidden">Телефон</label>
-                <input type="text" class="lesson__input lesson__input-phone" id="lesson-phone" placeholder="телефон">
-                <input type="submit" value="отправить">
+                <input type="text" id="lesson-phone" placeholder="телефон">
+                <button class="lesson__form-btn" type="submit" value="отправить">отправить</button>
               </form>
             </div>
           </div>
@@ -762,7 +767,7 @@
 
   <footer class="footer">
     <div class="footer__wrapper">
-      <b class="footer__logo">Supergym</b>
+      <a class="footer__logo">Supergym</a>
       <nav class="footer__navbar nav">
         <ul class="nav__list">
           <li class="nav__item nav__item--service">
@@ -810,7 +815,6 @@
     </div>
   </footer>
 
-  <script src="js/swiper.min.js"></script>
   <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
   </body>

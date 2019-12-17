@@ -31,9 +31,10 @@
   }
 }
 
-.coach__img {
+.coach__slider-item img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .coach__name {

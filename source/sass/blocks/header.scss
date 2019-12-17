@@ -25,6 +25,7 @@
   @include font($font: $bebas, $size: 26px, $height: 26px );
 
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: $white;
 }
 
@@ -146,7 +147,7 @@
   }
 }
 
-.header__img {
+.header__image-box img {
   width: 100%;
 }
 
@@ -250,7 +251,7 @@
     height: 390px;
   }
 
-  .header__img {
+  .header__image-box img {
     width: 324px;
     height: 390px;
   }

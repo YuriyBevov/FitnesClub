@@ -58,7 +58,7 @@
   }
 }
 
-.lesson__form input[type="submit"] {
+.lesson__form-btn {
   @include font($font: $robotoBold, $size: 14px, $height: 16px);
 
   width: 100%;
@@ -69,6 +69,7 @@
   cursor: pointer;
   background-color: transparent;
   color: $white;
+  padding: 0;
   transition: opacity 0.2s 0.1s;
 
   &:hover,
@@ -116,25 +117,16 @@
 
   .lesson__title {
     @include font($font: $bebas, $size: 32px, $height: 32px);
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   .lesson__form input[type="text"] {
     width: 100%;
-    margin-bottom: 31px;
-  }
-
-  .lesson__input--name {
     margin-bottom: 32px;
   }
 
-  .lesson__input--phone {
-    margin-bottom: 39px;
-  }
-
-
-  .lesson__form input[type="submit"] {
-    margin-bottom: 68px;
+  .lesson__form-btn {
+    margin-bottom: 69px;
     margin-top: 7px;
   }
 }
