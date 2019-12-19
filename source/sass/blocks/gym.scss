@@ -23,7 +23,7 @@
   color: $blue;
 }
 
-.gym__content p {
+.gym__content > p {
   @include font($font: $roboto, $size: 18px, $height: 27px);
 
   margin: 0;
@@ -31,7 +31,7 @@
   color: $blue;
 }
 
-.gym__text-box p {
+.gym__text-box > p {
   @include font($font: $robotoLight, $size: 16px, $height: 24px);
 
   width: 355px;
@@ -145,11 +145,11 @@
     line-height: 42px;
   }
 
-  .gym__content p {
+  .gym__content > p {
     margin-bottom: 35px;
   }
 
-  .gym__text-box p {
+  .gym__text-box > p {
     width: 510px;
     text-align: center;
   }
@@ -218,11 +218,11 @@
     margin-bottom: 8px;
   }
 
-  .gym__content p {
+  .gym__content > p {
     margin-bottom: 24px;
   }
 
-  .gym__text-box p {
+  .gym__text-box > p {
     width: 260px;
     text-align: left;
   }

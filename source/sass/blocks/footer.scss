@@ -18,12 +18,14 @@
   letter-spacing: 0.02em;
   margin-right: 22px;
   text-decoration: none;
+  flex-grow: 0.165;
   color: $white;
 }
 
 .footer__navbar {
   margin: 0 auto;
   margin-top: 3px;
+  max-width: 500px;
 }
 
 .footer__social {

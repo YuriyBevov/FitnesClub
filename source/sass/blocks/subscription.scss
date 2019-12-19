@@ -102,10 +102,11 @@ input[type="radio"] {
   width: 50%;
   max-width: 360px;
   min-height: 448px;
-  margin-right: auto;
+  margin-right: 40px;
+  margin-bottom: 40px;
   background-color: $white;
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -192,6 +193,7 @@ input[type="radio"] {
 
   &:hover,
   &:focus {
+    border: 0;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     color: $white;
   }
@@ -290,6 +292,11 @@ input[type="radio"] {
     &-before {
       bottom: 51%;
       left: 51.5%;
+
+      & img {
+        width: 24px;
+        height: 33px;
+      }
     }
   }
 
@@ -297,11 +304,6 @@ input[type="radio"] {
     font-size: 48px;
     line-height: 72px;
     margin-right: 12px;
-  }
-
-  .subscription__rubble {
-    width: 24px;
-    height: 33px;
   }
 
   .subscription__name {
