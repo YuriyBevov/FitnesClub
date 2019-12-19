@@ -101,13 +101,11 @@
     border-radius: 0;
     cursor: pointer;
     background-color: transparent;
-    background-image: url("../img/play-btn1x.png");
+
     background-repeat: no-repeat;
     background-size: 100px 100px;
 
-    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-      background-image: url("../img/play-btn2x.png");
-    }
+
 
     &:hover,
     &:focus {
@@ -121,6 +119,22 @@
       height: 80px;
       background-size: 80px 80px;
     }
+  }
+}
+
+.no-webp .gym__video-play-btn {
+  background-image: url("../img/play-btn1x.png");
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/play-btn2x.png");
+  }
+}
+
+.webp .gym__video-play-btn {
+  background-image: url("../img/play-btn1x.webp");
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/play-btn2x.webp");
   }
 }
 
