@@ -40,14 +40,8 @@
   margin-left: 50%;
   padding: 35px;
   padding-top: 31px;
-
-  background-image: url("../img/offer-brd-1x.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
-  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-    background-image: url("../img/offer-brd-2x.png");
-  }
 
   &--main {
     position: absolute;
@@ -104,6 +98,14 @@
   }
 }
 
+.no-webp .offer__item  {
+  background-image: url("../img/offer-brd.png");
+}
+
+.webp .offer__item  {
+  background-image: url("../img/offer-brd.webp");
+}
+
 @media (max-width: $desktop-width) {
   .offer__wrapper {
     padding: 100px 45px 0;
@@ -124,18 +126,20 @@
     margin-left: 0;
     max-width: 324px;
 
-    background-image: url("../img/offer-brd-tablet-1x.png");
-
-    @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
-      background-image: url("../img/offer-brd-tablet-2x.png");
-    }
-
     &--main {
       position: relative;
       width: 100%;
       max-width: 678px;
       margin-bottom: 30px;
     }
+  }
+
+  .no-webp .offer__item  {
+    background-image: url("../img/offer-brd-small.png");
+  }
+
+  .webp .offer__item  {
+    background-image: url("../img/offer-brd-small.webp");
   }
 
   .offer__item-description--gift {

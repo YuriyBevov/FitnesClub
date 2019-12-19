@@ -1,9 +1,20 @@
 .header {
   min-height: 659px;
-  background-image: url("../img/bg-header1x.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.webp .header {
+  background-image: url("../img/bg-header1x.webp");
+
+  @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
+    background-image: url("../img/bg-header2x.webp");
+  }
+}
+
+.no-webp .header {
+  background-image: url("../img/bg-header1x.jpg");
 
   @media (min-resolution: $retina-dppx) and (min-resolution: $retina-dpi) {
     background-image: url("../img/bg-header2x.jpg");
