@@ -18,7 +18,6 @@ var del = require("del");
 var uglify = require('gulp-uglify');
 var gulp = require('gulp');
 var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline;
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")

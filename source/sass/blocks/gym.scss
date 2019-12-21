@@ -260,6 +260,10 @@
     position: relative;
     max-width: 100%;
     width: 100%;
+
+    &-content img {
+      height: 167px;
+    }
   }
 
   .gym__video {

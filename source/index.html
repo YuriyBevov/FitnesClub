@@ -587,8 +587,12 @@
               </div>
             </div>
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/girl-mobile-1x.webp 1x, img/girl-mobile-2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1199px)" srcset="img/girl-tablet-1x.webp 1x, img/girl-tablet-2x.webp 2x">
               <source type="image/webp" srcset="img/girl1x.webp 1x, img/girl2x.webp 2x">
 
+              <source media="(max-width: 767px)" srcset="img/girl-mobile-1x.png 1x, img/girl-mobile-2x.png 2x">
+              <source media="(max-width: 1199px)" srcset="img/girl-tablet-1x.png 1x, img/girl-tablet-2x.png 2x">
               <!-- 1x - 280px, 2x - 560px -->
               <img src="img/girl1x.jpg" srcset="img/girl2x.jpg 2x" alt="Девушка">
             </picture>

@@ -193,6 +193,8 @@ input[type="radio"] {
 
   &:hover,
   &:focus {
+    min-height: 68px;
+    padding-top: 27px;
     border: 0;
     background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
     color: $white;

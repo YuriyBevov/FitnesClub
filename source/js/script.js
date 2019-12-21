@@ -3,14 +3,7 @@
 //modernizr-webp
 
 (function () {
-  Modernizr.on('webp', function(result) {
-    if (result) {
-      console.log('true')
-      // supported
-    } else {
-      // not-supported
-      console.log('false')
-    }
+  Modernizr.on('webp', function() {
   });
 })();
 
