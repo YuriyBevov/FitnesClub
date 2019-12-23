@@ -25,10 +25,11 @@
   margin: 0 auto;
   margin-top: 3px;
   max-width: 500px;
+  padding-left: 25px;
 }
 
 .footer__social {
-  max-width: 110px;
+  width: 135px;
 
   &-list {
     display: flex;
@@ -40,12 +41,8 @@
   }
 
   &-item {
-    margin-right: 25px;
+    margin-left: 25px;
     margin-bottom: 10px;
-
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
   }
 }
 
@@ -73,15 +70,17 @@
   }
 
   .footer__social {
-    max-width: 100px;
+    width: 120px;
+
 
     &-item {
-      margin-right: 20px;
+      margin-left: 20px;
     }
   }
 
   .footer__navbar {
     max-width: 450px;
+    padding-left: 15px;
   }
 }
 
@@ -104,13 +103,19 @@
 
   .footer__navbar {
     margin: 0;
+    padding-left: 0;
   }
 
   .footer__social {
-    max-width: 160px;
+    width: 200px;
 
     &-list {
       justify-content: flex-start;
+    }
+
+    &-item {
+      margin-left: 0;
+      margin-right: 35px;
     }
   }
 
@@ -129,9 +134,5 @@
       width: 14px;
       height: 27px;
     }
-  }
-
-  .footer__social-item {
-    margin-right: 35px;
   }
 }

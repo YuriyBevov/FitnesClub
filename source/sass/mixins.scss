@@ -9,10 +9,10 @@
   margin: 0 auto;
 
   @media (max-width: $desktop-width) {
-    max-width: 768px;
+    max-width: 1199px;
   }
 
   @media (max-width: $tablet-width) {
-    min-width: 320px;
+    max-width: 767px;
   }
 }
