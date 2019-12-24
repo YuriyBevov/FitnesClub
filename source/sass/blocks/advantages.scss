@@ -276,6 +276,14 @@
       min-height: 239px;
       margin-bottom: 48px;
     }
+
+    &--parking {
+      justify-content: flex-start;
+    }
+  }
+
+  &:nth-child(odd):not(:first-child):not(:nth-child(3n)) {
+    justify-content: flex-start;
   }
 
   .advantages__box {
