@@ -110,8 +110,8 @@
 
 @media (max-width: $tablet-width) {
   .lesson__content {
-    width: 290px;
-    padding-right: 0;
+    width: 100%;
+    padding: 0 15px;
   }
 
   .lesson__title {

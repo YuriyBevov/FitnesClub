@@ -67,11 +67,6 @@
     margin-right: 33px;
   }
 
-  & .advantages__marker-image img {
-    margin-top: -2px;
-    margin-bottom: 2px;
-  }
-
   & .advantages__marker-gloss {
     margin-left: -2px;
   }
@@ -80,14 +75,6 @@
 .advantages__box--comfort {
   & .advantages__marker {
     margin: 0 33px 0 21px;
-  }
-
-  & .advantages__marker-image {
-    margin-bottom: 5px;
-
-    & img {
-      margin-bottom: 2px;
-    }
   }
 
   & .advantages__marker-gloss {
@@ -99,21 +86,11 @@
   & .advantages__marker {
     margin-right: 33px;
   }
-
-  & .advantages__marker-image img {
-    margin-left: 2px;
-    margin-top: -2px;
-    margin-bottom: 2px;
-  }
 }
 
 .advantages__box--experience {
   & .advantages__marker {
     margin: 0 34px 0 3px;
-  }
-
-  & .advantages__marker-image img {
-    margin-bottom: 2px;
   }
 
   & .advantages__marker-gloss {
@@ -207,7 +184,7 @@
 @media (max-width: $desktop-width) {
   .advantages__wrapper {
     padding-top: 97px;
-    padding-bottom: 90px;
+    padding-bottom: 96px;
   }
 
   .advantages__title {
