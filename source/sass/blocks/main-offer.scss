@@ -3,11 +3,6 @@
   flex-wrap: wrap;
   height: 100%;
   background-color: $red;
-
-  & picture {
-    width: 50%;
-    height: 100%;
-  }
 }
 
 .main-offer__content {
@@ -68,16 +63,10 @@
 
 .main-offer img {
   width: 100%;
-  height: 100%;
+  height: 462px;
 }
 
 @media (max-width: $desktop-width) {
-  .main-offer__box {
-    & picture {
-      flex-grow: 1;
-    }
-  }
-
   .main-offer__content {
     max-width: 279px;
   }
@@ -89,13 +78,8 @@
     max-width: 320px;
   }
 
-
   .main-offer__box {
     max-width: 290px;
-
-    & picture {
-      height: 50%;
-    }
   }
 
   .main-offer__wrapper {

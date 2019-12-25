@@ -153,12 +153,6 @@
   }
 }
 
-.header__image-box {
-  & picture {
-    display: flex;
-  }
-}
-
 .header__image-box img {
   width: 100%;
   object-fit: cover;
@@ -272,7 +266,8 @@
   .header__image-box img {
     width: 100%;
     height: 390px;
-    object-position: top;  }
+    object-position: top;
+  }
 
   .header__btn {
     width: 183px;
