@@ -17,7 +17,6 @@ var include = require("posthtml-include");
 var del = require("del");
 var uglify = require('gulp-uglify');
 var gulp = require('gulp');
-var uglify = require('gulp-uglify');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -105,7 +104,6 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    //"source/js/**",
     "source//*.ico"
     ], {
       base: "source"
